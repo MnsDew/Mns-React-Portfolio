@@ -10,7 +10,7 @@ const Qualifications = () => {
         <div className="col-md-8 mb-4">
           <div className="card bg-dark text-white shadow-lg;" style={{ border: "2px solid rgb(83, 83, 199)" }}>
             <div className="card-body">
-              <h4 className="card-title text-info">Software Engineering Student - 3rd Year</h4>
+              <h4 className="card-title text-info">Software Engineering Student</h4>
               <a href="https://altinbas.edu.tr/" target="_blank" className="text-warning text-decoration-none">
                 Altinbas University, Türkiye, Istanbul
               </a>

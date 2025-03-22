@@ -7,7 +7,7 @@
     return(
         <div> 
        {IMAGES.map(imageObject => { //we are moving through the map function
-        return <Image src={imageObject.image} desc={imageObject.description}/>
+        return <Image key= {imageObject.id} src={imageObject.image} desc={imageObject.description}/>
        })}
         </div>
     )

@@ -33,7 +33,7 @@ constructor (){
            
             { 
                 this.state.TenQuotes.map(mathal => {
-                    return <p>{mathal.title}</p>
+                    return <p key={mathal.id}>{mathal.title}</p>
                 })
             }
             </div>
