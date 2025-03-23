@@ -8,7 +8,7 @@ constructor (){
 
     componentDidMount(){
 
-        fetch("http://localhost:3004/quotes/random")
+        fetch("https://mns-react-portfolio.onrender.com/quotes/random")
         .then((response) => response.json())
         .then((json) => this.setState({mathal: json}));
 
@@ -16,7 +16,7 @@ constructor (){
 
     fetchAmthal = () => {
   
-        fetch("http://localhost:3004/quotes/ten")
+        fetch("https://mns-react-portfolio.onrender.com/quotes/ten")
         .then((response) => response.json())
         .then((json) => this.setState({TenQuotes: json}));
          
