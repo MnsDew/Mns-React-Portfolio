@@ -12,7 +12,7 @@ I am passionate about **software development, engineering, and design**. My expe
 
 ## 🎨 Live Demo  
 
-🔗 [https://mns-portfolio.onrender.com](#) *(https://mns-portfolio.onrender.com/)*  
+🔗 [(#) *(https://mns-portfolio.onrender.com/)*  
 
 ## 📂 Project Structure  
 
