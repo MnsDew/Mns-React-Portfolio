@@ -11,6 +11,7 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}; 
+ // "start": "react-scripts start",
 
 export default Header;
