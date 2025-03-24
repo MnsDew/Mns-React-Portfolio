@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8af28c61.css",
+    "main.js": "/portfolio/static/js/main.5938d0dc.js",
+    "static/media/barcelona.jpg": "/portfolio/static/media/barcelona.5e53e4b331c59e7248c9.jpg",
+    "static/media/damascus.jpg": "/portfolio/static/media/damascus.b46164b0214f5ca83e2f.jpg",
+    "static/media/marrakech.jpg": "/portfolio/static/media/marrakech.d76e0bcc7835f99ca3a5.jpg",
+    "static/media/petra.jpg": "/portfolio/static/media/petra.14b1d7cc248be0c0b0b0.jpg",
+    "static/media/rome.jpg": "/portfolio/static/media/rome.c0cb3957a068625df334.jpg",
+    "static/media/manhattan.jpg": "/portfolio/static/media/manhattan.1cad42cb193545f8cd18.jpg",
+    "static/media/cairo.jpg": "/portfolio/static/media/cairo.e2a5ad94564af9f132de.jpg",
+    "static/media/cappadocia.jpg": "/portfolio/static/media/cappadocia.21bc90e828736d7016ea.jpg",
+    "static/media/prof.jpg": "/portfolio/static/media/prof.36de855e2c521fd07502.jpg",
+    "static/media/course1.png": "/portfolio/static/media/course1.c5765a26f670a566f8df.png",
+    "static/media/Course3.jpeg": "/portfolio/static/media/Course3.b149dec65d1a8307a023.jpeg",
+    "static/media/github.png": "/portfolio/static/media/github.553c66159c5672f25df6.png",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.d21b834035baa551e886.png",
+    "static/media/email (1).png": "/portfolio/static/media/email (1).784a21db7cc25e36f99c.png",
+    "static/media/Course2.png": "/portfolio/static/media/Course2.082727062587e5c987c5.png",
+    "index.html": "/portfolio/index.html",
+    "main.8af28c61.css.map": "/portfolio/static/css/main.8af28c61.css.map",
+    "main.5938d0dc.js.map": "/portfolio/static/js/main.5938d0dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8af28c61.css",
+    "static/js/main.5938d0dc.js"
+  ]
+}
