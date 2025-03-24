@@ -3,6 +3,8 @@
 *{
     list-style: none;
     color: white;
+    align-items: center;
+   
     /* background-color:rgb(1, 1, 36) */
 }
 
@@ -288,15 +290,15 @@ body, html {
  
 
    /* Center text horizontally and vertically */
-.container {
+/* .container {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   height: 100vh;  /* Full viewport height */
+   height: 100vh;   
  }
  
  h1, .hello-text, .name-text {
-   text-align: center;  /* Center text */
- }
+   text-align: center;   
+ } */
  

@@ -24,12 +24,12 @@ class Profile extends Component {
     //   transition: "0.3s" , hover:{ opacity: "0.5"}};
 
     return (
-      <div style={{ margin: "30px" }}>
+      <div style={{ margin: "40px" }}>
         <img src={profilePic} className="profile" alt="Profile Picture" />
-        <h1   className="hello-text">Hello!</h1>
+        <h1  style={{ display: "flex", display:"center"}}  className="hello-text">Hello!</h1>
         {/* style={{ display: "flex", marginLeft: 45 }} */}
         {/* style={{margin: 30}}  */}
-        <h4  className="name-text">I am Mansoor Gabali, software engineer.</h4>
+        <h4 style={{margin: 30}}  className="name-text">I am Mansoor Gabali, software engineer.</h4>
         <div>
           {this.state.displayBio ? (
             <div >
