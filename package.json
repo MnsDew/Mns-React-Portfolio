@@ -1,11 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "@tailwindcss/vite": "^4.0.15",
-    "tailwindcss": "^4.0.15"
-  }
-}
-=======
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -53,4 +46,3 @@
   "homepage": "/portfolio"
 }
 
->>>>>>> 31ac7514f8b7aa99553f34d37d7f34b826c6e54e
