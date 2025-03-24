@@ -12,6 +12,16 @@ const Header = () => {
     </header>
   );
 }; 
- // "start": "react-scripts start",
+//  "start": "react-scripts start",
+
+   // "scripts": {
+  //   "start": "serve -s build",
+    
+  //   "build": "react-scripts build",
+  //   "dev": "react-scripts dev",
+  //   "test": "react-scripts test",
+  //   "eject": "react-scripts eject"
+  // },
+
 
 export default Header;

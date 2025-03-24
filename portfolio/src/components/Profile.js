@@ -26,8 +26,10 @@ class Profile extends Component {
     return (
       <div style={{ margin: "30px" }}>
         <img src={profilePic} className="profile" alt="Profile Picture" />
-        <h1 style={{ display: "flex", marginLeft: 45 }}>Hello,</h1>
-        <h4 style={{margin: 30}}>My name is Mansoor Gabali, I am a software engineer.</h4>
+        <h1   className="hello-text">Hello!</h1>
+        {/* style={{ display: "flex", marginLeft: 45 }} */}
+        {/* style={{margin: 30}}  */}
+        <h4  className="name-text">I am Mansoor Gabali, software engineer.</h4>
         <div>
           {this.state.displayBio ? (
             <div >

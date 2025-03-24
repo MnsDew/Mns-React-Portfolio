@@ -25,7 +25,7 @@ import CONTACTS_DATA from "../data/ContactsData";
     return(
 <div >
 <a href={link} target={target || "_self"} rel="noopener noreferrer">     
-<img src={image} alt="contact" style={{width:"15%" , margin: 5}} />
+<img src={image} alt="contact" style={{width:"27%" , margin: 5}} />
 </a>
 </div>
     );

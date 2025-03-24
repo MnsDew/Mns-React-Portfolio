@@ -5,9 +5,58 @@
     color: white;
     /* background-color:rgb(1, 1, 36) */
 }
+
+
+
+/* Base styles (for larger screens) */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .container {
+   width: 80%;  /* Adjust width */
+   margin: 0 auto;
+ }
+ 
+ /* Media query for small screens like mobile */
+ @media (max-width: 768px) {
+   .container {
+     width: 90%;  /* More space for smaller screens */
+     padding: 10px;
+   }
+ 
+   h1 {
+     font-size: 1.5em;  /* Make text smaller */
+   }
+
+   @media (max-width: 768px) {
+  body {
+    padding-left: 0;  /* Make sure there's no left padding */
+    margin-left: 0;   /* Reset left margin */
+  }
+
+  .container {
+    width: 100%;  /* Ensure container fits properly */
+    padding: 0 15px;  /* Add some padding on left and right */
+  }
+}
+
+ 
+   .hello-text {
+     font-size: 1.2em;
+   }
+ 
+   .name-text {
+     font-size: 1.2em;
+   }
+ }
+ 
 .border-custom {
    border: 2px solid rgb(1, 1, 36) !important;
  }
+ 
  
 
 .column {
@@ -232,3 +281,22 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3)
       font-size: 16px;
       padding: 10px;
    }
+   /* Prevent horizontal overflow */
+body, html {
+   overflow-x: hidden;
+ }
+ 
+
+   /* Center text horizontally and vertically */
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;  /* Full viewport height */
+ }
+ 
+ h1, .hello-text, .name-text {
+   text-align: center;  /* Center text */
+ }
+ 
