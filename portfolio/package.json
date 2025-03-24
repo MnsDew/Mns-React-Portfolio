@@ -14,10 +14,10 @@
  "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
-  "dev": "react-scripts dev",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 }
+
 ,
   "eslintConfig": {
     "extends": [
@@ -43,7 +43,7 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.9"
   },
-  "homepage": "https://mns-portfolio.onrender.com/portfolio"
+"homepage": "."
 
 }
 
