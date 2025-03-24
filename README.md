@@ -10,7 +10,7 @@ I am passionate about **software development, engineering, and design**. My expe
 - **Databases**: SQL (PostgreSQL, MySQL), NoSQL (MongoDB)  
 - **Software Design**: Design Patterns, Best Practices  
 
-## 🎨 Live Demo  
+## 🎨 Live   
 
 🔗 *(https://mns-portfolio.onrender.com/)*  
 
