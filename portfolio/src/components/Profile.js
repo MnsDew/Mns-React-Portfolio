@@ -24,12 +24,13 @@ class Profile extends Component {
     return (
       <div style={{ paddingTop: "10px", margin: "30px", width: "100%" }}>
         <img src={profilePic} className="profile" alt="Profile Picture" />
-        <h1 style={{ }} className="hello-text">
+        <h1 className="hello-text">
           Hello!
         </h1>
-        <h4 style={{ paddingBottom:"40px" , paddingTop: "30px", margin: "0px", width: "100%" }} className="name-text">
-          I am Mansoor Gabali, software engineer.
-        </h4>
+        <h2 style={{paddingBottom:"10px" , paddingTop: "30px", margin: "0px", width: "100%"  }} className="name-text">
+          Mansoor Gabali,</h2> 
+          <h4 style={{ paddingBottom:"40px" , paddingTop: "10px", margin: "0px", width: "100%" }} className="role-text">
+          Software Engineer</h4>
         <div>
           <AnimatePresence>
             {this.state.displayBio && (
