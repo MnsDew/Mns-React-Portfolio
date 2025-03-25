@@ -11,9 +11,11 @@ class App extends React.Component {
       <div>
         <div className="row">
           <Title/>
+           
           <div className="column">
             <Profile />
           </div>
+           
           <div className="column">
             <Qualifications />
           </div>

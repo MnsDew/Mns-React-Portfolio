@@ -1,66 +1,85 @@
 import React, { Component } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import profilePic from "../assest/prof.jpg";
 
 class Profile extends Component {
   constructor() {
     super();
     this.state = { displayBio: false };
-
-    // Bind 'this' to the toggle function
     this.toggle = this.toggle.bind(this);
   }
 
   toggle() {
-    // Correct way to update state
     this.setState((prevState) => ({
       displayBio: !prevState.displayBio,
     }));
-    console.log("Updated state:", this.state.displayBio); // This might not log immediately due to async state updates
   }
-
+  
   render() {
-    // const myStyle = { width: "200px", height: "200px", borderRadius: "100px", paddingTop:"10px" , margin: "10px"};
-    // const btnStyle = { backgroundColor: "#483d8b", color: "white", fontSize: "18px" , borderRadius:"10px" ,  paddingTop:"" , margin: "10px", width: "25%",
-    //   transition: "0.3s" , hover:{ opacity: "0.5"}};
-
+    const bioVariants = {
+      hidden: { opacity: 0, y: 20 },
+      visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+    
     return (
-      <div style={{ margin: "40px" }}>
+      <div style={{ paddingTop: "10px", margin: "30px", width: "100%" }}>
         <img src={profilePic} className="profile" alt="Profile Picture" />
-        <h1  style={{ display: "flex", display:"center"}}  className="hello-text">Hello!</h1>
-        {/* style={{ display: "flex", marginLeft: 45 }} */}
-        {/* style={{margin: 30}}  */}
-        <h4 style={{margin: 30}}  className="name-text">I am Mansoor Gabali, software engineer.</h4>
+        <h1 style={{ }} className="hello-text">
+          Hello!
+        </h1>
+        <h4 style={{ paddingBottom:"40px" , paddingTop: "30px", margin: "0px", width: "100%" }} className="name-text">
+          I am Mansoor Gabali, software engineer.
+        </h4>
         <div>
-          {this.state.displayBio ? (
-            <div >
-              <p>🚀 Software Engineer | Full-Stack Developer</p>
-             
-              <p>
-                💡 Passionate about building scalable applications, <br/>system
-                architecture, and software design.
-              </p>
-              
-              <p>
-                🛠️ Expertise: JavaScript (React, Node.js), Java (Spring),<br/> SQL &
-                NoSQL, AI, and Data Analysis.
-              </p>
-              <p>
-                🔍 Focused on: Full-stack development, <br/>  software design patterns, 
-              </p>
-
-              <button onClick={this.toggle} className="btn">
-                Hide
-              </button>
-            </div>
-          ) : (
-            <button onClick={this.toggle} className="btn">
+          <AnimatePresence>
+            {this.state.displayBio && (
+              <motion.div
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={bioVariants}
+              >
+                <motion.p variants={bioVariants}>🚀 Software Engineer | Full-Stack Developer</motion.p>
+                <motion.hr variants={bioVariants} />
+                <motion.p variants={bioVariants}>
+                  💡 Passionate about building scalable applications, <br />
+                  system architecture, and software design.
+                </motion.p>
+                <motion.hr variants={bioVariants} />
+                <motion.p variants={bioVariants}>
+                  🛠️ Expertise: JavaScript (React, Node.js), Java (Spring),<br />
+                  SQL & NoSQL, AI, and Data Analysis.
+                </motion.p>
+                <motion.hr variants={bioVariants} />
+                <motion.p variants={bioVariants}>
+                  🔍 Focused on: Full-stack development, <br /> software design patterns,
+                </motion.p>
+                <motion.button
+                  onClick={this.toggle}
+                  className="btn"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  >
+                  Hide
+                </motion.button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          {!this.state.displayBio && (
+            <motion.button
+            onClick={this.toggle}
+            className="btn"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            >
               Show more
-            </button>
+            </motion.button>
           )}
         </div>
       </div>
     );
   }
 }
+ 
 
 export default Profile;

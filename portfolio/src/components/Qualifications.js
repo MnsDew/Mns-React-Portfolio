@@ -2,7 +2,17 @@ import React from "react";
 
 const Qualifications = () => {
   return (
-    <div className="container mt-5 text-white text-center">
+    <div>
+      <hr style={{
+        height: "7px", 
+        border: "none", 
+        background: "linear-gradient(to right, #6a5acd, #483d8b, #6a5acd)", 
+        borderRadius: "5px",
+        margin: "20px auto",
+        width: "80%"
+      }} /> 
+  
+    <div className="container mt-5 text-white text-center ">
       <h2 className="mb-4 fw-bold text-white">My Qualifications and Experiences</h2>
 
       <div className="row justify-content-center">
@@ -47,6 +57,7 @@ const Qualifications = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
