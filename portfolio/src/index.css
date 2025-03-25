@@ -181,7 +181,7 @@ body {
   animation-name: fade-out;
   animation-duration: 2s;
   @media (max-width: 900px) {
-    padding-right: 20%;
+    padding-right: 40%;
   }
 }
 
