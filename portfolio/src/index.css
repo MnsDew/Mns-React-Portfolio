@@ -40,7 +40,7 @@ body {
 }
 
 .hello-text {
-  font-size: 4.5em;
+  font-size: 4.2em;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -88,7 +88,8 @@ body {
   }
 
   .hello-text {
-    font-size: 3.8em;
+    font-size: 3.5em;
+    display:inline-block;
   }
 
   .name-text {
@@ -220,7 +221,7 @@ body {
 
 @media (max-width: 900px) {
   .title-fade-in, .title-fade-out {
-    padding-right: 0; /* Remove padding-right for smaller screens */
+    padding-right: 20%; /* Remove padding-right for smaller screens */
     text-align: center; /* Ensure text stays centered */
   }
 }
