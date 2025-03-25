@@ -162,12 +162,13 @@ body {
 .title-fade-in {
   margin: 30px;
   padding-right: 6%;
-  /* align-items: center; */
+  align-items: center;
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 2s;
   @media (max-width: 900px) {
-    padding-right: 20%;
+    align-items: center;
+    padding-right: 15%;
     /* width: 250px; */
   }
 }
@@ -175,13 +176,13 @@ body {
 .title-fade-out {
   margin: 30px;
   padding-right: 6%;
-
-  /* align-items: center; */
+  align-items: center;
   opacity: 100;
   animation-name: fade-out;
   animation-duration: 2s;
   @media (max-width: 900px) {
-    padding-right: 40%;
+    align-items: center;
+    padding-right: 15%;
   }
 }
 

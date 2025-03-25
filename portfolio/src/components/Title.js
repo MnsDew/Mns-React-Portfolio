@@ -3,7 +3,10 @@ import React, { Component } from "react";
 const TITLES = [
     "Software Engineer", 
     "AI Trainer", 
-    "English Teacher"
+    "Full-Stack Developer", 
+    "English Instructor",
+    "Database Engineer",
+    "Data Scientist"
 ];
 
 class Title extends Component {
