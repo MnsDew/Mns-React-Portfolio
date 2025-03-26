@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "framer-motion": "^12.5.0"
-    @remix-run/dev
+
   }
 }
