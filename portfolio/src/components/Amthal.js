@@ -20,8 +20,6 @@ class Amthal extends Component {
   fetchRandomQuote = () => {
     this.setState({ loading: true });
     fetch("https://mns70-react-portfolio.vercel.app/quotes/random")
-    // old link https://mns-react-portfolio.onrender.com
-
       .then((response) => response.json())
       .then((json) => this.setState({ mathal: json, loading: false }))
       .catch((error) => this.setState({ error, loading: false }));
@@ -31,8 +29,6 @@ class Amthal extends Component {
   fetchAmthal = () => {
     this.setState({ loading: true });
     fetch("https://mns70-react-portfolio.vercel.app/quotes/ten")
-    // old link https://mns-react-portfolio.onrender.com
-  
       .then((response) => response.json())
       .then((json) => this.setState({ TenQuotes: json, loading: false }))
       .catch((error) => this.setState({ error, loading: false }));
@@ -52,15 +48,15 @@ class Amthal extends Component {
           <div className="quote-card">{mathal.title || "No quote available"}</div>
         )}
         <hr />
-        <h3 className="amthal-title">Find Your Next Favorite Quote !</h3>
+        <h3 className="amthal-title">Find Your Next Favorite Quote!</h3>
         <button className="amthal-button" onClick={this.fetchAmthal}>
-          More...Quotes
+          More... Quotes
         </button>
 
         {TenQuotes.length > 0 && (
           <div>
-            {TenQuotes.map((mathal) => (
-              <div key={mathal.id} className="quote-card">
+            {TenQuotes.map((mathal, index) => (
+              <div key={mathal.id || index} className="quote-card">
                 {mathal.title}
               </div>
             ))}
