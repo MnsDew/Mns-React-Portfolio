@@ -11,7 +11,7 @@ app.use((req,res,next) => {
 
     //API call get
     //this api function will return 1 random MATHAL or quote
-    app.get("/quotes/random" , (req,res) => {
+    app.get("/quotes/random",(req,res) => {
         res.json(randomMathal());
     });
     // the secon api will return 10 Amthal or quotes by random type 
@@ -31,7 +31,12 @@ app.use((err,req,res,next) => {
 })
     
 // now we wanna create the port 
-const PORT = 3004;
-app.listen(PORT, () =>{
-    console.log("Server started on PORT " + PORT);
-})
+// const PORT = 3004;
+// app.listen(PORT, () =>{
+//     console.log("Server started on PORT " + PORT);
+// })
+
+const PORT = process.env.PORT || 3004;
+app.listen(PORT, () => {
+  console.log("Server started on PORT " + PORT);
+});
