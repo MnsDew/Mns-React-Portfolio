@@ -19,7 +19,9 @@ class Amthal extends Component {
   // Fetch random quote when component mounts
   fetchRandomQuote = () => {
     this.setState({ loading: true });
-    fetch("https://mns-react-portfolio.onrender.com/quotes/random")
+    fetch("mns70-react-portfolio.vercel.app/quotes/random")
+    // old link https://mns-react-portfolio.onrender.com
+
       .then((response) => response.json())
       .then((json) => this.setState({ mathal: json, loading: false }))
       .catch((error) => this.setState({ error, loading: false }));
@@ -28,7 +30,9 @@ class Amthal extends Component {
   // Fetch ten more quotes when button is clicked
   fetchAmthal = () => {
     this.setState({ loading: true });
-    fetch("https://mns-react-portfolio.onrender.com/quotes/ten")
+    fetch("https://mns70-react-portfolio.vercel.app/quotes/ten")
+    // old link https://mns-react-portfolio.onrender.com
+    // 
       .then((response) => response.json())
       .then((json) => this.setState({ TenQuotes: json, loading: false }))
       .catch((error) => this.setState({ error, loading: false }));

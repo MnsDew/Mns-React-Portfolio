@@ -11,6 +11,8 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@remix-run/dev": "^1.0.0",
+    "@vercel/node": "^5.1.14",
     "express": "^4.21.2"
   }
 }
