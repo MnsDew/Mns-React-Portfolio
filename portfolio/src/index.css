@@ -4,27 +4,24 @@
   list-style: none;
   color: white;
   align-items: center;
-  @media (max-width: 800px) {
-    .column {
-      width: 250px;
-      display: flex;
-  flex-wrap: wrap; /* Ensure items wrap */
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 100%;
-    }
-  }
+   
   html,
   body {
     width: 100%;
     overflow-x: hidden;
   }
-
-
-  /* background-color:rgb(1, 1, 36) */
 }
  
- 
+@media (max-width: 800px) {
+  .column {
+    width: 250px;
+    display: flex;
+flex-wrap: wrap; /* Ensure items wrap */
+justify-content: center;
+margin: 0 auto;
+max-width: 100%;
+  }
+}
  
 /* Base styles (for larger screens) */
 body {
@@ -286,31 +283,64 @@ body::after {
 
 .header {
   background-color: #483d8b;
-  padding: 10px 20px;
+  text-align: center;
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
+  justify-content: center;  
+  align-items:center; /* Centers content vertically */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   width: 100%; /* Makes sure it spans the full width */
+  box-sizing:border-box;
+}
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+    padding: 7px 6px;
+    padding-left: 28px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container {
+    gap: 15px;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 8px 6%;
+    justify-content: center;
+  text-align: center;
+  }
 }
 
+
 .nav-container {
-  display: flex;
+  display:flex;
   justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  width: 100%;
   margin: 0 auto;
   max-width: 100%;
-  gap: 40px; /* Adds space between the links */
+  gap: 33px; /* Adds space between the links */
 }
 
 .nav-link {
   color: white;
-  text-decoration: none;
-  font-size: 20px;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 19px;
   max-width: 100%;
   font-weight: 600;
-  padding: 8px 8px;
+  padding: 19px 7px;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, transform 0.2s;
 }
@@ -318,6 +348,7 @@ body::after {
 .nav-link:hover {
   background-color: #6a5acd;
   transform: scale(1.1);
+
 }
 
 .technologies {
@@ -346,6 +377,40 @@ body::after {
 body,
 html {
   overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .technologies {
+    width: 90%; /* or something like 250px if you prefer fixed */
+    margin: 10px auto;
+  }
+
+  .technologies img {
+    height: 120px; /* smaller height */
+    width: 100%;
+  }
+
+  .technologies p {
+    font-size: 14px; /* slightly smaller text for better fit */
+  }
+}
+
+.tech-heading {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  text-shadow: 2px 2px 8px #6a5acd;
+}
+
+@media (max-width: 768px) {
+  .tech-heading {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    text-shadow: 2px 2px 8px #6a5acd;
+  }
+
 }
 
 /* Center text horizontally and vertically */

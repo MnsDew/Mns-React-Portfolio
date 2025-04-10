@@ -6,6 +6,8 @@
  const Technologies = () => {
     return(
         <div> 
+          <h2 className="tech-heading">Technologies & Languages That Drive My Development Journey</h2>
+          <h1 className="tech-heading">Here’s What’s Under the Hood 🛠️</h1>
        {IMAGES.map(imageObject => { //we are moving through the map function
         return <Image key= {imageObject.id} src={imageObject.image} desc={imageObject.description}/>
        })}
