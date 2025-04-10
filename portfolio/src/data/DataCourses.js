@@ -9,8 +9,8 @@ const DataCourses = [
     title: "Bookstore Management System",
     description:
       "A command-line application built with JavaScript for managing bookstore inventory and sales operations.\
-       The system allows users to perform CRUD operations for books—along with processing sales and generating receipts.",
-    link: "https://satr.codes/path/ecbAGsuqOQ/view",
+       The system allows users to perform CRUD operations for books—along with processing sales and generating receipts By Satr Platform Full-Stack Course.",
+    link: "https://github.com/MnsDew/bookstore-management-system.git",
     image: course1,
     target: "_blank", // Opens link in a new tab
   },
