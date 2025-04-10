@@ -1,4 +1,5 @@
 import github from "../assest/github.png"
+import github1 from "../assest/github1.svg"
 const IMAGES = [
   {
     id: 1,
@@ -46,7 +47,7 @@ const IMAGES = [
     id: 8,
     title: "github",
     description: "GitHub: Code hosting platform for collaboration and version control.",
-    image: github,
+    image: github1,
   },
   {
     id: 9,

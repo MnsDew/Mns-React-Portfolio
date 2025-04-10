@@ -294,40 +294,26 @@ body::after {
 }
 @media (max-width: 768px) {
   .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 7px 6px;
-    padding-left: 28px;
-    margin-left: 5px;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 1px;  /* Adjust padding for mobile */
+    margin-left: 4px;
   }
 }
-@media (max-width: 768px) {
-  .nav-container {
-    gap: 15px;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-link {
-    font-size: 16px;
-    padding: 8px 6%;
-    justify-content: center;
-  text-align: center;
-  }
-}
-
+ 
 
 .nav-container {
-  display:flex;
+  display:inline-flex;
   justify-content: center;
   align-items: center;
   padding-left: 2%;
   width: 100%;
   margin: 0 auto;
   max-width: 100%;
-  gap: 33px; /* Adds space between the links */
+  gap : 30px; /* Adds space between the links */
 }
 
 .nav-link {
@@ -340,16 +326,35 @@ body::after {
   font-size: 19px;
   max-width: 100%;
   font-weight: 600;
-  padding: 19px 7px;
+  padding: 19px 8px;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, transform 0.2s;
 }
 
+ 
 .nav-link:hover {
   background-color: #6a5acd;
   transform: scale(1.1);
 
 }
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding-left: 8%;
+    flex-wrap: wrap; 
+    align-items: center;
+    
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav-link {
+    font-size: 16px;
+    justify-content: center;
+  text-align: center;
+  }
+  
+}
+ 
 
 .technologies {
   display: inline-block;
@@ -359,13 +364,14 @@ body::after {
 
 .technologies img:hover {
   filter: brightness(50%);
-  
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
 }
 
 .technologies img {
   
   width : 100% ;
-  height: 180x;
+  height: 180px;
 }
 
 .technologies p {
@@ -380,18 +386,22 @@ html {
 }
 @media (max-width: 768px) {
   .technologies {
-    width: 90%; /* or something like 250px if you prefer fixed */
+    width: 100%; /* or something like 250px if you prefer fixed */
     margin: 10px auto;
+  }
+ 
+   
+  .technologies p {
+    font-size: 15px; /* slightly smaller text for better fit */
   }
 
   .technologies img {
-    height: 120px; /* smaller height */
-    width: 100%;
+  
+    width : 100% ;
+    height: 70px;
   }
+ 
 
-  .technologies p {
-    font-size: 14px; /* slightly smaller text for better fit */
-  }
 }
 
 .tech-heading {
@@ -404,6 +414,7 @@ html {
 
 @media (max-width: 768px) {
   .tech-heading {
+    padding-bottom: 30px;
     font-size: 1em;
     color: white;
     text-align: center;
@@ -412,6 +423,8 @@ html {
   }
 
 }
+
+
 
 /* Center text horizontally and vertically */
 /* .container {

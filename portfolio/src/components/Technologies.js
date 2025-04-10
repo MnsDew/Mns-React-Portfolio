@@ -7,7 +7,7 @@
     return(
         <div> 
           <h2 className="tech-heading">Technologies & Languages That Drive My Development Journey</h2>
-          <h1 className="tech-heading">Here’s What’s Under the Hood 🛠️</h1>
+          <h3 className="tech-heading">Here’s What’s Under the Hood 🛠️</h3>
        {IMAGES.map(imageObject => { //we are moving through the map function
         return <Image key= {imageObject.id} src={imageObject.image} desc={imageObject.description}/>
        })}
@@ -21,7 +21,7 @@
     return (
         <div className="technologies">
      <a target="_blank" rel="" href={src}>
-        <ImageShadow src={src}/></a>
+        <ImageShadow className ="image-shadow"src={src}/></a>
         <p>{desc}</p>
         </div>
     )
