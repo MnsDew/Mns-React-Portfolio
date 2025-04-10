@@ -1,60 +1,106 @@
-import barcelona from "../images/barcelona.jpg";
-import cairo from "../images/cairo.jpg";
-import cappadocia from "../images/cappadocia.jpg";
-import damascus from "../images/damascus.jpg";
-import manhattan from "../images/manhattan.jpg";
-import marrakech from "../images/marrakech.jpg";
-import petra from "../images/petra.jpg";
-import rome from "../images/rome.jpg";
-
+import github from "../assest/github.png"
 const IMAGES = [
   {
     id: 1,
-    title: "Barcelona",
-    description: "A vibrant city in Spain known for its Gaudí architecture and Mediterranean beaches.",
-    image: barcelona,
+    title: "JavaScript",
+    description: "Core programming language for web development, both on the frontend and backend.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
     id: 2,
-    title: "Cairo",
-    description: "The capital of Egypt, home to the Great Pyramids of Giza and the Nile River.",
-    image: cairo,
+    title: "HTML5",
+    description: "Standard markup language for creating web pages and applications.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   {
     id: 3,
-    title: "Cappadocia",
-    description: "A magical region in Turkey famous for its fairy chimneys and hot air balloon rides.",
-    image: cappadocia,
+    title: "CSS3",
+    description: "Styling language used to describe the appearance of web pages.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
     id: 4,
-    title: "Damascus",
-    description: "One of the oldest continuously inhabited cities, rich in history and culture.",
-    image: damascus,
+    title: "React",
+    description: "JavaScript library for building dynamic and responsive user interfaces.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
     id: 5,
-    title: "Manhattan",
-    description: "The heart of New York City, known for Times Square, Central Park, and skyscrapers.",
-    image: manhattan,
+    title: "Node.js",
+    description: "JavaScript runtime for building server-side applications.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
     id: 6,
-    title: "Marrakech",
-    description: "A Moroccan city famous for its bustling souks, palaces, and vibrant street life.",
-    image: marrakech,
+    title: "Java",
+    description: "General-purpose programming language used in Android and enterprise development.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   },
   {
     id: 7,
-    title: "Petra",
-    description: "An ancient city in Jordan, famous for its rock-cut architecture and the Treasury.",
-    image: petra,
+    title: "Git",
+    description: "Distributed version control system for tracking code changes.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
     id: 8,
-    title: "Rome",
-    description: "The capital of Italy, known for its historic landmarks like the Colosseum and Vatican City.",
-    image: rome,
+    title: "github",
+    description: "Code hosting platform for collaboration and version control.",
+    image: github,
+  },
+  {
+    id: 9,
+    title: "Linux",
+    description: "Open-source operating system used for development and servers.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+  },
+  {
+    id: 10,
+    title: "Vite",
+    description: "Fast frontend build tool for modern web development.",
+    image: "https://vitejs.dev/logo.svg",
+  },
+  {
+    id: 11,
+    title: "Bootstrap",
+    description: "CSS framework for building responsive and mobile-first websites.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
+  {
+    id: 12,
+    title: "Figma",
+    description: "Interface design tool used for UI/UX prototyping and collaboration.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
+  {
+    id: 13,
+    title: "Postman",
+    description: "API platform for building, testing, and documenting APIs.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  },
+  {
+    id: 14,
+    title: "React Native",
+    description: "Framework for building native mobile apps using React.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    id: 15,
+    title: "MongoDB",
+    description: "NoSQL database known for its flexibility and scalability.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    id: 16,
+    title: "MySQL",
+    description: "Relational database management system based on SQL.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
+    id: 17,
+    title: "PostgreSQL",
+    description: "Powerful, open-source relational database system.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
 ];
 
