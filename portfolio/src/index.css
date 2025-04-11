@@ -299,8 +299,9 @@ body::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px 1px;  /* Adjust padding for mobile */
-    margin-left: 4px;
+    padding: 10px 1px;   
+    
+     
   }
 }
  
@@ -345,10 +346,10 @@ body::after {
     align-items: center;
     
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
   }
   .nav-link {
-    font-size: 16px;
+    font-size: 20px;
     justify-content: center;
   text-align: center;
   }
@@ -371,7 +372,7 @@ body::after {
 .technologies img {
   
   width : 100% ;
-  height: 180px;
+  height: 280px;
 }
 
 .technologies p {
@@ -385,20 +386,18 @@ html {
   overflow-x: hidden;
 }
 @media (max-width: 768px) {
-  .technologies {
-    width: 100%; /* or something like 250px if you prefer fixed */
-    margin: 10px auto;
-  }
- 
+  
+
    
   .technologies p {
-    font-size: 15px; /* slightly smaller text for better fit */
+    font-size: 17px; /* slightly smaller text for better fit */
   }
 
   .technologies img {
   
     width : 100% ;
-    height: 70px;
+    height: 285px;
+    
   }
  
 
@@ -415,7 +414,7 @@ html {
 @media (max-width: 768px) {
   .tech-heading {
     padding-bottom: 30px;
-    font-size: 1em;
+    font-size: 1.4em;
     color: white;
     text-align: center;
     margin: 40px 0 20px 0;
