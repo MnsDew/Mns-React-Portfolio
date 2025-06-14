@@ -1,4 +1,4 @@
-import github from "../assest/github.png"
+
 import github1 from "../assest/github1.svg"
 const IMAGES = [
   {

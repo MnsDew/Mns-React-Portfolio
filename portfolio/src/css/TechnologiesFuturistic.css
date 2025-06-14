@@ -105,8 +105,8 @@
   text-shadow: 0 0 4px #fff, 0 0 8px #00fff7;
   letter-spacing: 0.5px;
   background: linear-gradient(90deg, #00fff7 0%, #8324c7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 @media (max-width: 700px) {
