@@ -1,13 +1,13 @@
-portfolio/src/components/Profile.css
+
 .profile-container {
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* portfolio/src/components/Profile.css */
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+ 
 .profile-image-container {
     position: relative;
     width: 200px;
@@ -80,8 +80,9 @@ portfolio/src/components/Profile.css
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-  }
-  /* Add these styles to your Profile.css */
+  } 
+
+
 .bio-item {
     opacity: 0; /* Start with items invisible */
     transform: translateX(-100px); /* Start position */
@@ -91,9 +92,7 @@ portfolio/src/components/Profile.css
   .bio-item.visible {
     opacity: 1;
     transform: translateX(0);
-  }
-  
-  /* Add a fade-in effect for the emoji */
+  } 
   .emoji {
     opacity: 0;
     transform: scale(0.5);
@@ -104,8 +103,7 @@ portfolio/src/components/Profile.css
     opacity: 1;
     transform: scale(1.2);
   }
-  
-  /* Add a subtle hover effect for each bio item */
+   
   .bio-item {
     opacity: 0;
     transform: translateX(-100px);
@@ -203,8 +201,7 @@ portfolio/src/components/Profile.css
     z-index: -1;
     border-radius: 20px;
   }
-
-  /* portfolio/src/components/Profile.css */
+ 
 .profile-container {
   padding: 2rem;
   margin: 0 auto;
