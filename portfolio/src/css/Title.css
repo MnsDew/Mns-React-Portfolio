@@ -66,13 +66,13 @@
   }
 }
 
-/* Add a subtle hover effect */
+ 
 .futuristic-title:hover {
   text-shadow: 2px 2px 15px #6a5acd;
   transform: scale(1.02);
 }
 
-/* Media queries for responsiveness */
+ 
 @media (max-width: 768px) {
   .futuristic-title {
     font-size: 1.3em;

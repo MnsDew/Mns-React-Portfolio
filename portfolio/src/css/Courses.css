@@ -1,4 +1,4 @@
-/* portfolio/src/components/Courses.css */
+ 
 .courses-container {
     padding: 1.5rem;
     max-width: 1200px;
@@ -178,8 +178,7 @@
     animation-delay: calc(var(--card-index) * 0.1s);
     opacity: 0;
   }
-  
-  /* Glass morphism effect */
+   
   .project-card::before {
     content: '';
     position: absolute;

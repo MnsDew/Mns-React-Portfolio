@@ -28,7 +28,7 @@
 
 .amthal-button:hover {
     opacity: 0.5;
-    transform: translateY(-7px); /* Optionally add a slight movement when hovering */
+    transform: translateY(-7px);  
 }
 
 .quote-card {

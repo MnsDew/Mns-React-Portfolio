@@ -1,4 +1,4 @@
-/* portfolio/src/components/ContactCard.css */
+ 
 .contact-card-overlay {
     position: fixed;
     top: 0;
@@ -27,9 +27,9 @@
     overflow: hidden;
   }
   
-  /* Star background effect */
+ 
   .contact-card::before {
-    /* content: ''; */
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -133,7 +133,7 @@
     box-shadow: none;
   }
   
-  /* Animations */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -162,13 +162,11 @@
       opacity: 1;
     }
   }
-  
-  /* Glowing effect on hover */
+   
   .contact-card:hover {
     box-shadow: 0 0 30px rgba(157, 78, 221, 0.3);
   }
-  
-  /* Responsive adjustments */
+ 
   @media (max-width: 600px) {
     .contact-card {
       padding: 1.5rem;

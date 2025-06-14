@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "../css/Header.css";
-import { SocialContactRefContext } from "./App";
+import { SocialContactRefContext } from "./App.js";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,9 +73,7 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Link to="/">
-            {/* Logo here if you have one */}
-          </Link>
+          {/* Empty */}
         </motion.div>
 
         {/* Desktop Navigation */}
