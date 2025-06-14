@@ -184,7 +184,7 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     .qualifications-container {
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 0.2rem;
     }
   
     .qualifications-header h2 {

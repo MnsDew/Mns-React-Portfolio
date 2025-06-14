@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* Ensure items wrap */
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
     max-width: 100%;
   }
 }
@@ -65,39 +65,38 @@ body {
 /* Media query for small screens like mobile */
 @media (max-width: 768px) {
   .container {
-    width: 30%; /* More space for smaller screens */
-    padding: 10px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
-  h1 {
-    font-size: 1.5em; /* Make text smaller */
+  h1, h2, h3, .project-title {
+    font-size: 1.2em;
   }
-
-  @media (max-width: 768px) {
-    body {
-      padding-left: 0; /* Make sure there's no left padding */
-      margin-left: 0; /* Reset left margin */
-    }
-
-    .container {
-      width: 100%; /* Ensure container fits properly */
-      padding: 0 15px; /* Add some padding on left and right */
-    }
+  .project-description {
+    font-size: 1em;
   }
 
   .hello-text {
     font-size: 3.5em;
-    display:inline-block;
+    display: inline-block;
   }
 
   .name-text {
     font-size: 1.7em;
-    display:inline-block;
-  } 
+    display: inline-block;
+  }
 
-  
   .role-text {
     font-size: 1.3em;
+  }
+
+  .card, .project-card {
+    max-width: 95vw;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
   }
 }
    
@@ -221,7 +220,7 @@ body {
 
 @media (max-width: 900px) {
   .title-fade-in, .title-fade-out {
-    padding-right: 20%; /* Remove padding-right for smaller screens */
+    /* padding-right: 20%; Remove padding-right for smaller screens */
     text-align: center; /* Ensure text stays centered */
   }
 }
@@ -248,7 +247,7 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
   text-align: center;
   font-size: 17px;
-  padding: 3%;
+  padding: 5%;
   /* background-color: rgb(1, 1, 36); here is the background color */
   background-color: rgb(0, 0, 0); /* here is the background color */
   /* rgb(1, 1, 36); */
@@ -314,7 +313,7 @@ body::after {
   display:inline-flex;
   justify-content: center;
   align-items: center;
-  padding-left: 2%;
+  padding-left: 0%;
   width: 100%;
   margin: 0 auto;
   max-width: 100%;
@@ -345,7 +344,7 @@ body::after {
 
 @media (max-width: 768px) {
   .nav-container {
-    padding-left: 8%;
+   
     flex-wrap: wrap; 
     align-items: center;
     
@@ -479,7 +478,7 @@ html {
   gap: 2rem;
 }
 
-.mobile-menu-link {
+.mobile-nav-link, .mobile-menu-link {
   width: 100%;
   background: linear-gradient(90deg, #8324c7 0%, #00fff7 100%);
   color: #fff;
@@ -497,8 +496,19 @@ html {
   cursor: pointer;
 }
 
+.mobile-nav-link.active,
+.mobile-nav-link:hover,
 .mobile-menu-link.active,
 .mobile-menu-link:hover {
   background: linear-gradient(90deg, #00fff7 0%, #8324c7 100%);
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .card, .project-card {
+    max-width: 95vw;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+  }
 }
