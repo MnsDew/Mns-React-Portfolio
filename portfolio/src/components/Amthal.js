@@ -16,7 +16,7 @@ const Amthal = () => {
   const fetchRandomQuote = () => {
     setLoading(true);
     setError(null);
-    fetch(`${process.env.REACT_APP_API_BASE_URL}/quotes/random`)
+    fetch("https://mns70-react-portfolio.vercel.app/quotes/random")
       .then((response) => response.json())
       .then((json) => {
         setMathal(json);
@@ -31,7 +31,7 @@ const Amthal = () => {
   const fetchAmthal = () => {
     setLoading(true);
     setError(null);
-    fetch(`${process.env.REACT_APP_API_BASE_URL}/quotes/ten`)
+    fetch("https://mns70-react-portfolio.vercel.app/quotes/ten")
       .then((response) => response.json())
       .then((json) => {
         setTenQuotes(json);
@@ -63,7 +63,7 @@ const Amthal = () => {
       <hr className="futuristic-hr" />
       <h3 className="futuristic-subtitle">Find Your Next Favorite Quote!</h3>
       <button className="futuristic-btn" onClick={fetchAmthal}>
-        <span>🚀 Clic for More random... Quotes</span>
+        <span>🚀 Click for More random... Quotes</span>
       </button>
 
       {tenQuotes.length > 0 && (
