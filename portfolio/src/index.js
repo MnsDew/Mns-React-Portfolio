@@ -4,7 +4,8 @@ import App from "./components/App";
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import Amthal from "./components/Amthal";
 import Header from "./components/Header";
-// import Gallery from "./components/Gallery";
+import SocialContact from "./components/SocialContact";
+ 
 import Technologies from "./components/Technologies";
 
 
@@ -15,5 +16,6 @@ root.render(<BrowserRouter>
 <Route exact path="/" element= {<App/>}/>
 <Route path="/amthal" element= {<Amthal/>}/>
 <Route path="/Technologies" element= {<Technologies/>}/>
-</Routes>
+</Routes> 
 </BrowserRouter>);
+

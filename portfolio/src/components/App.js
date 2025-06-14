@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import Profile from "./Profile";
 import Qualifications from "./Qualifications";
-import "../index.css";
+import "../css/index.css";
 import Courses from "./Courses";
 import SocialContact from "./SocialContact";
 import Title from "./Title";
-class App extends React.Component {
-  render() {
-    return (
+
+export const SocialContactRefContext = React.createContext(null);
+
+function App() {
+  const socialContactRef = useRef();
+
+  return (
+    <SocialContactRefContext.Provider value={socialContactRef}>
       <div>
         <div className="row">
           <Title/>
@@ -23,10 +28,12 @@ class App extends React.Component {
         <hr></hr>
         <Courses/>
         <hr></hr>
-        <SocialContact/>
+        <div id="contact-section">
+          <SocialContact ref={socialContactRef} />
+        </div>
       </div>
-    );
-  }
+    </SocialContactRefContext.Provider>
+  );
 }
 
 export default App;

@@ -1,70 +1,82 @@
-import React, { Component } from "react";
-import '../Amthal.css';
+import React, { useEffect, useState } from "react";
+import '../css/Amthal.css';
 
-class Amthal extends Component {
-  constructor() {
-    super();
-    this.state = { 
-      mathal: {}, 
-      TenQuotes: [],
-      loading: false, // To manage the loading state
-      error: null,    // For any fetch errors
-    };
-  }
+const Amthal = () => {
+  const [mathal, setMathal] = useState({});
+  const [tenQuotes, setTenQuotes] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  componentDidMount() {
-    this.fetchRandomQuote();
-  }
+  // Fetch random quote on mount
+  useEffect(() => {
+    fetchRandomQuote();
+    // eslint-disable-next-line
+  }, []);
 
-  // Fetch random quote when component mounts
-  fetchRandomQuote = () => {
-    this.setState({ loading: true });
-    fetch("https://mns70-react-portfolio.vercel.app/quotes/random")
+  const fetchRandomQuote = () => {
+    setLoading(true);
+    setError(null);
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/quotes/random`)
       .then((response) => response.json())
-      .then((json) => this.setState({ mathal: json, loading: false }))
-      .catch((error) => this.setState({ error, loading: false }));
-  }
+      .then((json) => {
+        setMathal(json);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  };
 
-  // Fetch ten more quotes when button is clicked
-  fetchAmthal = () => {
-    this.setState({ loading: true });
-    fetch("https://mns70-react-portfolio.vercel.app/quotes/ten")
+  const fetchAmthal = () => {
+    setLoading(true);
+    setError(null);
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/quotes/ten`)
       .then((response) => response.json())
-      .then((json) => this.setState({ TenQuotes: json, loading: false }))
-      .catch((error) => this.setState({ error, loading: false }));
-  }
+      .then((json) => {
+        setTenQuotes(json);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  };
 
-  render() {
-    const { mathal, TenQuotes, loading, error } = this.state;
+  return (
+    <div className="amthal-futuristic-container">
+      <h2 className="futuristic-title-glow">🌌 Today's Quote</h2>
+      {loading ? (
+        <div className="futuristic-spinner"></div>
+      ) : error ? (
+        <div className="futuristic-error">
+          <p>🚨 {error.message}</p>
+          <button className="futuristic-btn" onClick={fetchRandomQuote}>Retry</button>
+        </div>
+      ) : (
+        <div className="futuristic-quote-card animate">
+          <span className="futuristic-quote-text">
+            {mathal.title || <span className="futuristic-empty">No quote available</span>}
+          </span>
+        </div>
+      )}
+      <hr className="futuristic-hr" />
+      <h3 className="futuristic-subtitle">Find Your Next Favorite Quote!</h3>
+      <button className="futuristic-btn" onClick={fetchAmthal}>
+        <span>🚀 Clic for More random... Quotes</span>
+      </button>
 
-    return (
-      <div className="amthal-container">
-        <h2>Today's Quote</h2>
-        {loading ? (
-          <p>Loading...</p>
-        ) : error ? (
-          <p>Error: {error.message}</p>
-        ) : (
-          <div className="quote-card">{mathal.title || "No quote available"}</div>
-        )}
-        <hr />
-        <h3 className="amthal-title">Find Your Next Favorite Quote!</h3>
-        <button className="amthal-button" onClick={this.fetchAmthal}>
-          More... Quotes
-        </button>
-
-        {TenQuotes.length > 0 && (
-          <div>
-            {TenQuotes.map((mathal, index) => (
-              <div key={mathal.id || index} className="quote-card">
-                {mathal.title}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
-}
+      {tenQuotes.length > 0 && (
+        <div className="futuristic-quotes-list">
+          {tenQuotes.map((mathal, index) => (
+            <div key={mathal.id || index} className="futuristic-quote-card animate">
+              <span className="futuristic-quote-text">{mathal.title}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default Amthal;

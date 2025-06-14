@@ -1,7 +1,8 @@
 import course1 from "../assest/course1.png";
 import course2 from "../assest/Course2.png";
 import course3 from "../assest/Course3.jpeg";
-import course4 from "../assest/mockupLibro.png";
+// import course4 from "../assest/mockupLibro.png";
+import course4 from "../assest/1link.png";
 
 const DataCourses = [
   {
@@ -24,18 +25,18 @@ const DataCourses = [
   },
   {
     id: 3,
-    title: "Vigor: Workout Plan Sharing App",
+    title: "Vigor: Workout Plan Sharing App , Mobile Application",
     description:
-      "Vigor is a fitness management app designed to help users set personal fitness goals, track their progress, and log activities. It features an intuitive interface to enhance engagement and motivation.",
+      "Vigor is a fitness management app designed to help users set personal fitness goals, track their progress, and log activities. It features an intuitive interface to enhance engagement and motivation , using React-Native , Expo",
     link: "https://github.com/MnsDew/Vigor-App.git",
     image: course3,
   },
   {
     id: 4,
-    title: "LibroTrack: Library Management System (LMS)",
+    title: "LibroTrack: Library Management System (LMS) , Desktop Application",
     description:
-      "LibroTrack is a software for managing library operations, including book management, member records, and generating reports. It helps track borrowed books and issue date and overdue date efficiently.",
-    link: "https://github.com/MnsDew/Feat-LMS-GUI-JAVAFX-Library-Management-System-.git",
+      "LibroTrack is a 100% Java library management system using MySQL, Swing, and JavaFX. It supports full CRUD for books and students, lending/returning, reports, and statistics on total books, students, and borrowed/returned items across two databases.",
+    link: "https://librotrack.my.canva.site/",
     image: course4,
   },
 ];

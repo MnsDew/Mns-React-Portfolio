@@ -1,0 +1,441 @@
+/* position:fixed; */
+
+* {
+  list-style: none;
+  color: white;
+  align-items: center;
+   
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+ 
+@media (max-width: 800px) {
+  .column {
+    width: 250px;
+    display: flex;
+flex-wrap: wrap; /* Ensure items wrap */
+justify-content: center;
+margin: 0 auto;
+max-width: 100%;
+  }
+}
+ 
+/* Base styles (for larger screens) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%; /* Ensure full width */
+  max-width: 100vw; /* Prevent extra width */
+  padding: 0 10px; /* Small padding for mobile */
+}
+
+.hello-text {
+  font-size: 4.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #8324c7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name-text {
+  font-size: 35px;
+  font-weight: 600;
+  color: #f8efff;
+  text-shadow: 2px 2px 10px rgba(178, 159, 255, 0.3);
+}
+
+.role-text {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px  #6a5acd;
+   
+  transition: all 0.3s ease-in-out;
+}
+/* Media query for small screens like mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 30%; /* More space for smaller screens */
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Make text smaller */
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding-left: 0; /* Make sure there's no left padding */
+      margin-left: 0; /* Reset left margin */
+    }
+
+    .container {
+      width: 100%; /* Ensure container fits properly */
+      padding: 0 15px; /* Add some padding on left and right */
+    }
+  }
+
+  .hello-text {
+    font-size: 3.5em;
+    display:inline-block;
+  }
+
+  .name-text {
+    font-size: 1.7em;
+    display:inline-block;
+  } 
+
+  
+  .role-text {
+    font-size: 1.3em;
+  }
+}
+   
+ 
+.border-custom {
+  border: 2px solid rgb(1, 1, 36) !important;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  /* background-color: rgb(1, 1, 36); here as well the background-color: */
+  background-color: rgb(0, 0, 0); /* here as well the background-color: */
+  max-width: 300px;
+  padding-inline: 20px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #483d8b;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.card button:hover {
+  opacity: 0.5;
+}
+
+.card img {
+  border-radius: 15px;
+  box-shadow: 0 3px 0 rgba(160, 160, 160, 0.6);
+}
+
+body {
+  text-align: center; 
+  font-size: 17px;
+  padding: 2%;
+  background-color: rgb(1, 1, 36);
+  font-family: "DM Serif Display", serif;
+}
+
+/* .profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 70px;
+  border-style: ridge;
+  border-color: #483d8b;
+} */
+
+.btn {
+  background-color: #483d8b;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+/* nice trick in css , when you want to keep it as phone screen  */
+
+@media (max-width: 800px) {
+  .column {
+    width: 250px;
+  }
+}
+.title-fade-in {
+  margin: 80px;
+  padding-right: 7%;
+  text-shadow: 2px 2px 10px #6a5acd;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  text-align: center; /* Ensure the text stays centered */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Ensure full height for vertical centering */
+}
+
+.title-fade-out {
+  margin: 80px;
+  padding-right: 7%;
+  text-shadow: 2px 2px 10px #6a5acd;
+  opacity: 100;
+  animation-name: fade-out;
+  animation-duration: 2s;
+  text-align: center; /* Ensure the text stays centered */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Ensure full height for vertical centering */
+}
+
+@media (max-width: 900px) {
+  .title-fade-in, .title-fade-out {
+    padding-right: 20%; /* Remove padding-right for smaller screens */
+    text-align: center; /* Ensure text stays centered */
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  text-align: center;
+  font-size: 17px;
+  padding: 3%;
+  /* background-color: rgb(1, 1, 36); here is the background color */
+  background-color: rgb(0, 0, 0); /* here is the background color */
+  /* rgb(1, 1, 36); */
+  font-family: "DM Serif Display", serif;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); /* Stars effect */
+  background-size: 1000px; /* Make stars bigger */
+  animation: starsMove 20s linear infinite; /* Stars animation */
+}
+
+@keyframes starsMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px;
+  }
+}
+
+body::after {
+  content: "";
+  position:fixed; /* GODDAAAMMNN*/
+  width: 100%;
+  height: 30%;
+  background: rgba(255, 255, 255, 0.02);
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.header {
+  background-color: #483d8b;
+  text-align: center;
+  display: flex;
+  justify-content: center;  
+  align-items:center; /* Centers content vertically */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 100%; /* Makes sure it spans the full width */
+  box-sizing:border-box;
+}
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 1px;   
+    
+     
+  }
+}
+ 
+
+.nav-container {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  gap : 30px; /* Adds space between the links */
+}
+
+.nav-link {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 19px;
+  max-width: 100%;
+  font-weight: 600;
+  padding: 19px 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+ 
+.nav-link:hover {
+  background-color: #6a5acd;
+  transform: scale(1.1);
+
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding-left: 8%;
+    flex-wrap: wrap; 
+    align-items: center;
+    
+    justify-content: center;
+    gap: 15px;
+  }
+  .nav-link {
+    font-size: 20px;
+    justify-content: center;
+  text-align: center;
+  }
+  
+}
+ 
+
+.technologies {
+  display: inline-block;
+   margin: 15px;  
+  width: 300px;   
+}
+
+.technologies img:hover {
+  filter: brightness(50%);
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.technologies img {
+  
+  width : 100% ;
+  height: 280px;
+}
+
+.technologies p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+/* Prevent horizontal overflow */
+body,
+html {
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  
+
+   
+  .technologies p {
+    font-size: 17px; /* slightly smaller text for better fit */
+  }
+
+  .technologies img {
+  
+    width : 100% ;
+    height: 285px;
+    
+  }
+ 
+
+}
+
+.tech-heading {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  text-shadow: 2px 2px 8px #6a5acd;
+}
+
+@media (max-width: 768px) {
+  .tech-heading {
+    padding-bottom: 30px;
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    text-shadow: 2px 2px 8px #6a5acd;
+  }
+
+}
+
+
+
+/* Center text horizontally and vertically */
+/* .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;   
+ }
+ 
+ h1, .hello-text, .name-text {
+   text-align: center;   
+ } */

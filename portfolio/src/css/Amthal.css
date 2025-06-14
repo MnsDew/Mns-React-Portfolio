@@ -1,0 +1,197 @@
+.amthal-container {
+    margin: 50px;
+}
+
+.amthal-title {
+    margin: 30px;
+}
+
+.amthal-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #483d8b;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 10px;
+  text-shadow: 2px 2px 10px  #050505;
+  @media(max-width:900%){
+    width: 100%;
+  }
+}
+
+.amthal-button:hover {
+    opacity: 0.5;
+    transform: translateY(-7px); /* Optionally add a slight movement when hovering */
+}
+
+.quote-card {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f8f8f822;
+    border: 1px solid #9e4fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-8px);
+     
+}
+
+.quote-card + .quote-card {
+    margin-top: 15px;
+}
+
+.amthal-futuristic-container {
+  max-width: 600px;
+  margin: 48px auto;
+  padding: 2.5rem 1.5rem;
+  background: rgba(20, 20, 40, 0.505);
+  border-radius: 22px;
+  opacity: 0.8;
+  box-shadow: 0 8px 40px 0 rgba(0, 255, 255, 0.15), 0 1.5px 8px 0 #8324c7;
+  backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(0,255,255,0.12);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.futuristic-title-glow {
+  font-size: 2.2rem;
+  font-family: 'Orbitron', 'DM Serif Display', serif;
+  color: #00fff7;
+  text-shadow: 0 0 12px #00fff7, 0 0 32px #8324c7;
+  margin-bottom: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.futuristic-hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #00fff7 0%, #8324c7 100%);
+  margin: 2rem 0 1.5rem 0;
+  opacity: 0.5;
+}
+
+.futuristic-subtitle {
+  color: #bfaaff;
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', 'DM Serif Display', serif;
+}
+
+.futuristic-quote-card {
+  background: rgba(30, 30, 60, 0.85);
+  border: 1.5px solid #00fff7;
+  border-radius: 14px;
+  margin: 1.2rem auto;
+  padding: 1.3rem 1.7rem;
+  box-shadow: 0 0 18px #00fff733, 0 0 8px #8324c7;
+  font-size: 1.18rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s, box-shadow 0.22s;
+  animation: futuristicFadeInUp 0.6s;
+}
+
+.futuristic-quote-card.animate:hover {
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 0 32px #00fff7cc, 0 0 16px #8324c7;
+}
+
+@keyframes futuristicFadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.futuristic-quote-text {
+  font-family: 'DM Serif Display', 'Orbitron', serif;
+  font-size: 1.18rem;
+  color: #fff;
+  text-shadow: 0 0 8px #00fff7, 0 0 16px #8324c7;
+  letter-spacing: 0.5px;
+}
+
+.futuristic-btn {
+  background: linear-gradient(90deg, #00fff7 0%, #8324c7 100%);
+  color: #181818;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.08rem;
+  font-family: 'Orbitron', 'DM Serif Display', serif;
+  font-weight: 600;
+  margin: 1.2rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 16px #00fff7aa, 0 1px 8px #8324c7;
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  letter-spacing: 1px;
+  outline: none;
+}
+.futuristic-btn:hover {
+  background: linear-gradient(90deg, #8324c7 0%, #00fff7 100%);
+  color: #fff;
+  transform: scale(1.04) translateY(-2px);
+}
+
+.futuristic-spinner {
+  border: 4px solid #222;
+  border-top: 4px solid #00fff7;
+  border-right: 4px solid #8324c7;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin: 2rem auto;
+  animation: futuristicSpin 0.8s linear infinite;
+}
+@keyframes futuristicSpin {
+  to { transform: rotate(360deg);}
+}
+
+.futuristic-error {
+  color: #ffb3b3;
+  background: rgba(255, 0, 80, 0.08);
+  border: 1px solid #ffb3b3;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.2rem 0;
+}
+
+.futuristic-empty {
+  color: #00fff7;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.futuristic-quotes-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .amthal-futuristic-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .futuristic-quote-card {
+    padding: 1rem 0.7rem;
+    font-size: 1rem;
+  }
+  .futuristic-title-glow {
+    font-size: 1.3rem;
+  }
+}
