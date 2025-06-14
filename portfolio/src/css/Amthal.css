@@ -1,9 +1,11 @@
 .amthal-container {
     margin: 50px;
+    
 }
 
 .amthal-title {
     margin: 30px;
+    
 }
 
 .amthal-button {
@@ -54,7 +56,7 @@
 
 .amthal-futuristic-container {
   max-width: 600px;
-  margin: 48px auto;
+  margin: 80px auto;
   padding: 2.5rem 1.5rem;
   background: rgba(20, 20, 40, 0.505);
   border-radius: 22px;
@@ -193,5 +195,11 @@
   }
   .futuristic-title-glow {
     font-size: 1.3rem;
+  }
+  .amthal-container, .container {
+    padding-top: 2.5rem;
+  }
+  .amthal-container > *:first-child {
+    margin-top: 3.4rem;
   }
 }

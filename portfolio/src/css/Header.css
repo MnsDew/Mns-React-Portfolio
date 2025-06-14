@@ -1,3 +1,4 @@
+
 /* Header.css */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
@@ -35,7 +36,7 @@
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #383838;
   text-decoration: none;
   position: relative;
   z-index: 1;
@@ -68,7 +69,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #fff;
+  color: #424242;
   text-decoration: none;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1rem;

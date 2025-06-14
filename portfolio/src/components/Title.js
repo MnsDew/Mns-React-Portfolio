@@ -13,36 +13,43 @@ const TITLES = [
 class Title extends Component {
   constructor() {
     super();
-    this.state = {titleIndex: 0, fadeIn: true};
+    this.state = { titleIndex: 0, fade: "in" };
   }
 
   componentDidMount() {
-    this.animateTitles();
-    this.timeout = setTimeout(() => {
-      this.setState({fadeIn: false})
-    }, 2000);
+    this.startAnimation();
   }
 
   componentWillUnmount() {
-    clearInterval(this.titleInterval);
-    clearTimeout(this.timeout);
+    clearTimeout(this.fadeTimeout);
+    clearTimeout(this.switchTimeout);
   }
 
-  animateTitles() {
-    this.titleInterval = setInterval(() => {
-      const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
-      this.setState({titleIndex, fadeIn: true});
-      this.timeout = setTimeout(() => {
-        this.setState({fadeIn: false})
-      }, 2000);
-    }, 4000);
-  }
+  startAnimation = () => {
+    // Fade in
+    this.setState({ fade: "in" });
+    this.fadeTimeout = setTimeout(() => {
+      // Stay visible, then fade out
+      this.setState({ fade: "out" });
+      this.switchTimeout = setTimeout(() => {
+        // Switch to next title and repeat
+        this.setState(
+          prev => ({
+            titleIndex: (prev.titleIndex + 1) % TITLES.length,
+            fade: "in"
+          }),
+          this.startAnimation
+        );
+      }, 600); // fade out duration
+    }, 2800); // visible duration
+  };
 
   render() {
+    const { titleIndex, fade } = this.state;
     return (
       <div className="title-container">
-        <p className={`futuristic-title ${this.state.fadeIn ? "title-fade-in" : "title-fade-out"}`}>
-          {TITLES[this.state.titleIndex]}
+        <p className={`futuristic-title title-fade-${fade}`}>
+          {TITLES[titleIndex]}
         </p>
       </div>
     );

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Orbitron:wght@700&display=swap');
 
 .tech-heading {
+  padding: 17%;
   font-family: 'Orbitron', Arial, sans-serif;
   color: #fff;
   text-align: center;
@@ -105,7 +106,7 @@
   text-shadow: 0 0 4px #fff, 0 0 8px #00fff7;
   letter-spacing: 0.5px;
   background: linear-gradient(90deg, #00fff7 0%, #8324c7 100%);
-  
+
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
