@@ -353,6 +353,9 @@
     padding: 1rem 0.2rem 0.7rem 0.2rem;
     margin-top: 0.3rem;
   }
+  .cancel-btn {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Custom Scrollbar */
