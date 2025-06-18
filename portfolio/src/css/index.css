@@ -251,18 +251,25 @@ body {
   /* background-color: rgb(1, 1, 36); here is the background color */
   background-color: rgb(0, 0, 0); /* here is the background color */
   /* rgb(1, 1, 36); */
+  animation: starsMove 40s linear infinite; /* Stars animation */
   font-family: "DM Serif Display", serif;
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); /* Stars effect */
-  background-size: 1000px; /* Make stars bigger */
-  animation: starsMove 20s linear infinite; /* Stars animation */
-}
+  background-size: 800px;
+  animation: starsMove 40s linear infinite; /* Slowed down from 20s to 30s */
+  will-change: background-position; /* Hardware acceleration */
+  /* backface-visibility: hidden; */
+  perspective: 1000;
+ 
+} /* Make stars bigger */
+ 
+
 
 @keyframes starsMove {
-  from {
+  0% {
     background-position: 0 0;
   }
-  to {
-    background-position: 1000px 1000px;
+  100% {
+    background-position: 800px 800px;
   }
 }
 
@@ -271,8 +278,8 @@ body::after {
   position:fixed; /* GODDAAAMMNN*/
   width: 100%;
   height: 30%;
-  background: rgba(255, 255, 255, 0.02);
-  animation: twinkle 3s infinite alternate;
+  background: rgba(255, 255, 255, 0.114);
+  animation: twinkle 10s infinite alternate;
 }
 
 @keyframes twinkle {
@@ -280,9 +287,10 @@ body::after {
     opacity: 0.1;
   }
   to {
-    opacity: 0.4;
+    opacity: 0.3;
   }
 }
+
 
 .header {
   background-color: #483d8b;

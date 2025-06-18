@@ -63,7 +63,7 @@ const Amthal = () => {
       <hr className="futuristic-hr" />
       <h3 className="futuristic-subtitle">Find Your Next Favorite Quote!</h3>
       <button className="futuristic-btn" onClick={fetchAmthal}>
-        <span>🚀 Click for More random... Quotes</span>
+        <span>🚀 Click for more random... Quotes</span>
       </button>
 
       {tenQuotes.length > 0 && (

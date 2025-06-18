@@ -232,7 +232,8 @@
   .button-text {
     position: relative;
     z-index: 2;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: #dadadadd;
+    text-shadow: 0 0 10px rgba(18, 18, 18, 0.868);
   }
 
   .button-icon {

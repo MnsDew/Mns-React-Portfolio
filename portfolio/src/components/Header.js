@@ -59,7 +59,10 @@ const Header = () => {
     { path: "/", label: "Home", icon: "🏠", onClick: handleHomeClick },
     { path: "/amthal", label: "Quotes", icon: "💭" },
     { path: "/Technologies", label: "Tech", icon: "⚡" },
-    { path: "#", label: "Services", icon: "🎯", onClick: () => setIsServicesModalOpen(true) },
+    { path: "#", label: "Services", icon: "🎯", onClick: () => {
+      setIsServicesModalOpen(true);
+      setIsMobileMenuOpen(false);
+    }},
     { path: "#", label: "Social", icon: "🌐", onClick: handleSocialClick }
   ];
 
