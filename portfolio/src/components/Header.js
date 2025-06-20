@@ -55,15 +55,25 @@ const Header = () => {
     }
   };
 
+  const handleServicesClick = () => {
+    setIsServicesModalOpen(isOpen => !isOpen);
+    setIsMobileMenuOpen(false);
+  };
+
+  const createNavHandler = (originalOnClick) => () => {
+    setIsServicesModalOpen(false);
+    setIsMobileMenuOpen(false);
+    if (originalOnClick) {
+      originalOnClick();
+    }
+  };
+
   const navItems = [
-    { path: "/", label: "Home", icon: "🏠", onClick: handleHomeClick },
-    { path: "/amthal", label: "Quotes", icon: "💭" },
-    { path: "/Technologies", label: "Tech", icon: "⚡" },
-    { path: "#", label: "Services", icon: "🎯", onClick: () => {
-      setIsServicesModalOpen(true);
-      setIsMobileMenuOpen(false);
-    }},
-    { path: "#", label: "Social", icon: "🌐", onClick: handleSocialClick }
+    { path: "/", label: "Home", icon: "🏠", onClick: createNavHandler(handleHomeClick) },
+    { path: "/amthal", label: "Quotes", icon: "💭", onClick: createNavHandler(() => navigate("/amthal")) },
+    { path: "/Technologies", label: "Tech", icon: "⚡", onClick: createNavHandler(() => navigate("/Technologies")) },
+    { path: "#services", label: "Services", icon: "🎯", onClick: handleServicesClick},
+    { path: "#social", label: "Social", icon: "🌐", onClick: createNavHandler(handleSocialClick) }
   ];
 
   return (
@@ -147,24 +157,13 @@ const Header = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    {item.onClick ? (
-                      <motion.button
-                        className="mobile-nav-link social-link"
-                        onClick={item.onClick}
-                      >
-                        <span className="nav-icon">{item.icon}</span>
-                        <span className="nav-label">{item.label}</span>
-                      </motion.button>
-                    ) : (
-                      <Link 
-                        to={item.path}
-                        className={`mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        <span className="nav-icon">{item.icon}</span>
-                        <span className="nav-label">{item.label}</span>
-                      </Link>
-                    )}
+                    <motion.button
+                      className="mobile-nav-link"
+                      onClick={item.onClick}
+                    >
+                      <span className="nav-icon">{item.icon}</span>
+                      <span className="nav-label">{item.label}</span>
+                    </motion.button>
                   </motion.div>
                 ))}
               </motion.nav>
