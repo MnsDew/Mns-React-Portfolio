@@ -5,7 +5,6 @@ import "../css/index.css";
 import Courses from "./Courses";
 import SocialContact from "./SocialContact";
 import Title from "./Title";
-
 export const SocialContactRefContext = React.createContext(null);
 
 function App() {
