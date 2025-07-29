@@ -3,8 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./components/App";
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import Amthal from "./components/Amthal";
-import Header from "./components/Header";
-import SocialContact from "./components/SocialContact";
+import Header from "./components/Header"; 
  
 import Technologies from "./components/Technologies";
 import ServicesModal from "./components/ServicesModal";
