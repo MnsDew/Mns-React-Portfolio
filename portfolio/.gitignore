@@ -1,5 +1,7 @@
 # Dependencies
 node_modules/
+
+# Other ignores
 /.pnp
 .pnp.js
 

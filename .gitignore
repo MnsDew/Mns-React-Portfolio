@@ -1,5 +1,9 @@
 # Dependencies
 node_modules/
+
+
+
+# Other ignores
 /.pnp
 .pnp.js
 
@@ -28,6 +32,4 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
-node_modules
-node_modules
-node_modules
+
