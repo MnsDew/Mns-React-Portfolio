@@ -74,24 +74,24 @@ const ServicesModal = ({ isOpen, onClose }) => {
       return;
     }
     setLoading(true);
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID2,
-        e.target,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          alert('Message sent successfully!');
-          e.target.reset();
-          handleClose();
-        },
-        () => {
-          alert('Failed to send message. Try again.');
-        }
-      )
-      .finally(() => setLoading(false));
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID2,
+      e.target,
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        alert('Message sent successfully!');
+        e.target.reset();
+        handleClose();
+      },
+      () => {
+        alert('Failed to send message. Try again.');
+      }
+    )
+    .finally(() => setLoading(false));
+    
   };
 
   const handleNext = () => {
