@@ -1,0 +1,197 @@
+.contact-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .contact-card {
+    background: linear-gradient(135deg, #150126, #3d00ae);
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.5s ease-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+  }
+  
+ 
+  .contact-card::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    animation: twinkle 4s infinite;
+  }
+  
+  .contact-card h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .contact-card input,
+  .contact-card textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-card input:focus,
+  .contact-card textarea:focus {
+    outline: none;
+    border-color: #9d4edd;
+    box-shadow: 0 0 10px rgba(157, 78, 221, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .contact-card input::placeholder,
+  .contact-card textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact-card textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, #9d4edd, #6441a5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(157, 78, 221, 0.4);
+  }
+  
+  .submit-btn:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+   
+  .contact-card:hover {
+    box-shadow: 0 0 30px rgba(157, 78, 221, 0.3);
+  }
+ 
+  @media (max-width: 600px) {
+    .contact-card {
+      padding: 1.5rem;
+      width: 95%;
+      margin: 1rem;
+    }
+    
+    .contact-card h2 {
+      font-size: 1.5rem;
+    }
+
+    .close-btn {
+      top: 0.8rem;
+      right: 0.8rem;
+      width: 40px;
+      height: 40px;
+      font-size: 1.8rem;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .close-btn:active {
+      background: rgba(255, 255, 255, 0.3);
+      transform: rotate(90deg);
+    }
+
+    
+  }

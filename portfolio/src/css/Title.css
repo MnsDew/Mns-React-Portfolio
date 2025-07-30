@@ -1,0 +1,92 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.futuristic-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #6a5acd;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  white-space: nowrap;
+   
+}
+
+.futuristic-title::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #8324c7, #6a5acd);
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.2;
+  border-radius: 4px;
+}
+
+.title-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(.4,0,.2,1) both;
+  opacity: 1;
+}
+
+.title-fade-out {
+  animation: fadeOut 0.6s cubic-bezier(.4,0,.2,1) both;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
+
+ 
+.futuristic-title:hover {
+  text-shadow: 2px 2px 15px #6a5acd;
+  transform: scale(1.02);
+}
+
+ 
+@media (max-width: 768px) {
+  .futuristic-title {
+    font-size: 1.3em;
+   
+  }
+  
+  .title-container {
+    min-height: 30px;
+  }
+} 

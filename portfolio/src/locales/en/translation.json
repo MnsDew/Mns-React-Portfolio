@@ -1,0 +1,85 @@
+{
+  "header": {
+    "home": "Home",
+    "quotes": "Quotes",
+    "tech": "Tech",
+    "services": "Services",
+    "social": "Social"
+  },
+  "profile": {
+    "hello": "Hello, World! 👋",
+    "tagline": "Turning ideas into elegant solutions",
+    "bio": {
+      "item1": "Software Engineer | Full-Stack Developer",
+      "item2": "Committed to delivering scalable, user-centric applications...",
+      "item3": "Skilled in building full-stack solutions using JavaScript (React, Node.js), Java (Spring), MySQL, MongoDB, AI tools, and data-driven applications.",
+      "item4": "Specializing in full-stack development, system architecture, SOLID principles, and software design patterns for robust, maintainable code.",
+      "item5": "Always learning, always growing, always coding",
+      "button": "Hide",
+      "discover": "Discover More"
+    }
+  },
+  "services": {
+    "title": "Let's Build Something Amazing",
+    "step1": "What type of project do you need?",
+    "step1.other": "Please specify your project type",
+    "step1.other.placeholder": "Tell us about your project",
+    "step1.other.button": "Continue",
+    "step2": "What's your budget range?",
+    "step3": "Tell us more about your project",
+    "step3.name.placeholder": "Your name",
+    "step3.email.placeholder": "Your email address",
+    "step3.message.placeholder": "Describe your project in detail...",
+    "back": "Back",
+    "next": "Next",
+    "sending": "Sending...",
+    "submit": "Submit Project",
+    "cancel": "Cancel"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message..."
+  },
+  "courses": {
+    "header": "My Courses and Projects",
+    "viewProject": "View Project",
+    "visitProject": "Visit Project"
+  },
+  "technologies": {
+    "title": "Technologies & Languages That Drive My Development Journey",
+    "list": {
+      "0": "Click a Ball!",
+      "1": "React",
+      "2": "Node.js",
+      "3": "JavaScript",
+      "4": "HTML5",
+      "5": "CSS3",
+      "6": "Git",
+      "7": "Linux"
+    }
+  },
+  "amthal": {
+    "no_quote_available": "No quote available",
+    "find_your_next_favorite_quote": "Find Your Next Favorite Quote!",
+    "click_for_more_random_quotes": "🚀 Click for more random... Quotes"
+  },
+  "qualifications": {
+    "header": "Qualifications & Experience",
+    "title": "Software Engineer",
+    "company": "Tech Company",
+    "description": "Worked on amazing projects.",
+    "location": "Remote",
+    "explore": "Explore"
+  },
+  "title": {
+    "main": "Welcome to My Portfolio",
+    "subtitle": "Full-Stack Developer | Software Engineer"
+  },
+  "social": {
+    "title": "Connect with me",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+} 

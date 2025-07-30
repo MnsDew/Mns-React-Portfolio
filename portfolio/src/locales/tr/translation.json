@@ -1,0 +1,85 @@
+{
+  "header": {
+    "home": "Ana Sayfa",
+    "quotes": "Alıntılar",
+    "tech": "Teknoloji",
+    "services": "Hizmetler",
+    "social": "Sosyal"
+  },
+  "profile": {
+    "hello": "Merhaba, Dünya! 👋",
+    "tagline": "Fikirleri zarif çözümlere dönüştürmek",
+    "bio": {
+      "item1": "Yazılım Mühendisi | Full-Stack Geliştirici",
+      "item2": "Ölçeklenebilir, kullanıcı odaklı uygulamalar sunmaya kendini adamış...",
+      "item3": "JavaScript (React, Node.js), Java (Spring), MySQL, MongoDB, AI araçları ve veri odaklı uygulamalar ile tam kapsamlı çözümler geliştirme konusunda uzman.",
+      "item4": "Full-stack geliştirme, sistem mimarisi, SOLID prensipleri ve yazılım tasarım kalıplarında uzmanlaşmış, sağlam ve sürdürülebilir kod için.",
+      "item5": "Her zaman öğrenen, her zaman gelişen, her zaman kodlayan",
+      "button": "Gizle",
+      "discover": "Daha Fazla Keşfet"
+    }
+  },
+  "services": {
+    "title": "Harika Bir Şey İnşa Edelim",
+    "step1": "Ne tür bir projeye ihtiyacınız var?",
+    "step1.other": "Lütfen proje türünüzü belirtin",
+    "step1.other.placeholder": "Projenizden bahsedin",
+    "step1.other.button": "Devam",
+    "step2": "Bütçe aralığınız nedir?",
+    "step3": "Projeniz hakkında daha fazla bilgi verin",
+    "step3.name.placeholder": "Adınız",
+    "step3.email.placeholder": "E-posta adresiniz",
+    "step3.message.placeholder": "Projenizi ayrıntılı olarak açıklayın...",
+    "back": "Geri",
+    "next": "İleri",
+    "sending": "Gönderiliyor...",
+    "submit": "Projeyi Gönder",
+    "cancel": "İptal"
+  },
+  "contact": {
+    "title": "Benimle İletişime Geçin",
+    "name": "Adınız",
+    "email": "E-posta adresiniz",
+    "message": "Mesajınız..."
+  },
+  "courses": {
+    "header": "Kurslarım ve Projelerim",
+    "viewProject": "Projeyi Görüntüle",
+    "visitProject": "Projeyi Ziyaret Et"
+  },
+  "technologies": {
+    "title": "Geliştirme Yolculuğumu Sürükleyen Teknolojiler ve Diller",
+    "list": {
+      "0": "Bir Topa Tıkla!",
+      "1": "React",
+      "2": "Node.js",
+      "3": "JavaScript",
+      "4": "HTML5",
+      "5": "CSS3",
+      "6": "Git",
+      "7": "Linux"
+    }
+  },
+  "amthal": {
+    "no_quote_available": "Alıntı yok",
+    "find_your_next_favorite_quote": "Bir Sonraki Favori Alıntınızı Bulun!",
+    "click_for_more_random_quotes": "🚀 Daha fazla rastgele alıntı için tıklayın"
+  },
+  "qualifications": {
+    "header": "Nitelikler ve Deneyim",
+    "title": "Yazılım Mühendisi",
+    "company": "Teknoloji Şirketi",
+    "description": "Harika projelerde çalıştı.",
+    "location": "Uzaktan",
+    "explore": "Keşfet"
+  },
+  "title": {
+    "main": "Portföyüme Hoş Geldiniz",
+    "subtitle": "Full-Stack Geliştirici | Yazılım Mühendisi"
+  },
+  "social": {
+    "title": "Benimle Bağlanın",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+} 
