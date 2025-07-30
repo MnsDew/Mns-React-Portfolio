@@ -6,6 +6,7 @@
     "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "9.56.14",
     "@react-three/fiber": "8.15.13",
+    "ajv": "^8.12.0",
     "cra-template": "1.2.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.16.16",
