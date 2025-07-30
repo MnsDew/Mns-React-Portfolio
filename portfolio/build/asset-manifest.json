@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3015ff9.css",
-    "main.js": "/static/js/main.7dbdcf4a.js",
-    "static/media/1link.png": "/static/media/1link.01fc67d49edaaa29c3d4.png",
-    "static/media/prof.jpg": "/static/media/prof.36de855e2c521fd07502.jpg",
-    "static/media/course1.png": "/static/media/course1.c5765a26f670a566f8df.png",
-    "static/media/2nd.png": "/static/media/2nd.fbf61b7094cdf2d1ee0a.png",
-    "static/media/Course3.jpeg": "/static/media/Course3.b149dec65d1a8307a023.jpeg",
-    "static/media/github.png": "/static/media/github.553c66159c5672f25df6.png",
-    "static/media/linkedin.png": "/static/media/linkedin.d21b834035baa551e886.png",
-    "static/media/email (1).png": "/static/media/email (1).784a21db7cc25e36f99c.png",
-    "static/media/Course2.png": "/static/media/Course2.082727062587e5c987c5.png",
-    "index.html": "/index.html",
-    "static/media/github1.svg": "/static/media/github1.74d13353bde36d2dde5b52360f829273.svg",
-    "main.f3015ff9.css.map": "/static/css/main.f3015ff9.css.map",
-    "main.7dbdcf4a.js.map": "/static/js/main.7dbdcf4a.js.map"
+    "main.css": "./static/css/main.f3015ff9.css",
+    "main.js": "./static/js/main.388c2368.js",
+    "static/media/1link.png": "./static/media/1link.01fc67d49edaaa29c3d4.png",
+    "static/media/prof.jpg": "./static/media/prof.36de855e2c521fd07502.jpg",
+    "static/media/course1.png": "./static/media/course1.c5765a26f670a566f8df.png",
+    "static/media/2nd.png": "./static/media/2nd.fbf61b7094cdf2d1ee0a.png",
+    "static/media/Course3.jpeg": "./static/media/Course3.b149dec65d1a8307a023.jpeg",
+    "static/media/github.png": "./static/media/github.553c66159c5672f25df6.png",
+    "static/media/linkedin.png": "./static/media/linkedin.d21b834035baa551e886.png",
+    "static/media/email (1).png": "./static/media/email (1).784a21db7cc25e36f99c.png",
+    "static/media/Course2.png": "./static/media/Course2.082727062587e5c987c5.png",
+    "index.html": "./index.html",
+    "static/media/github1.svg": "./static/media/github1.74d13353bde36d2dde5b52360f829273.svg",
+    "main.f3015ff9.css.map": "./static/css/main.f3015ff9.css.map",
+    "main.388c2368.js.map": "./static/js/main.388c2368.js.map"
   },
   "entrypoints": [
     "static/css/main.f3015ff9.css",
-    "static/js/main.7dbdcf4a.js"
+    "static/js/main.388c2368.js"
   ]
 }
