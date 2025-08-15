@@ -121,6 +121,11 @@
     font-weight: 500;
     transition: all 0.3s ease;
   }
+
+  .project-button span {
+    color: #ffffffc5 !important;
+    text-shadow: 0 0 8px #0a0096, 0 0 16px #8324c7;
+  }
   
   .project-button:hover {
     transform: translateX(5px);

@@ -143,6 +143,10 @@
   letter-spacing: 1px;
   outline: none;
 }
+.futuristic-btn span {
+  color: #ffffffe4 !important;
+  text-shadow: 0 0 8px #009691, 0 0 16px #8324c7;
+}
 .futuristic-btn:hover {
   background: linear-gradient(90deg, #8324c7 0%, #00fff7 100%);
   color: #fff;

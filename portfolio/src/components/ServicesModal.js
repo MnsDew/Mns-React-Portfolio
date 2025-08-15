@@ -104,6 +104,52 @@ const ServicesModal = ({ isOpen, onClose }) => {
     setCurrentStep(prev => prev - 1);
   };
 
+  // New scroll functionality handlers
+  const handleOptionClick = (type, isDoubleClick = false) => {
+    if (currentStep === 1) {
+      handleProjectTypeSelect(type);
+      if (type !== 'other') {
+        if (isDoubleClick) {
+          // Double click: go directly to step 2
+          setTimeout(() => {
+            setCurrentStep(2);
+          }, 300);
+        } else {
+          // Single click: scroll down to show buttons
+          setTimeout(() => {
+            handleNext();
+          }, 500);
+          setTimeout(() => {
+            const modalContainer = document.querySelector('.modal-container');
+            if (modalContainer) {
+              modalContainer.scrollTo({
+                top: modalContainer.scrollHeight,
+                behavior: 'smooth'
+              });
+            }
+          }, 500);
+        }
+      }
+    } else if (currentStep === 2) {
+      setFormData(prev => ({ ...prev, budget: type }));
+      if (isDoubleClick) {
+        // Double click: go directly to step 3
+        setTimeout(() => {
+          setCurrentStep(3);
+        }, 300);
+      } else {
+        // Single click: scroll to next step
+        setTimeout(() => {
+          handleNext();
+        }, 500);
+      }
+    }
+  };
+
+  const handleOptionDoubleClick = (type) => {
+    handleOptionClick(type, true);
+  };
+
   const projectTypes = [
     { id: 'web', label: 'Web Development', icon: '🌐' },
     { id: 'mobile', label: 'Mobile App', icon: '📱' },
@@ -171,7 +217,8 @@ const ServicesModal = ({ isOpen, onClose }) => {
                               key={type.id}
                               type="button"
                               className={`option-card ${formData.projectType === type.id ? 'selected' : ''}`}
-                              onClick={() => handleProjectTypeSelect(type.id)}
+                              onClick={() => handleOptionClick(type.id)}
+                              onDoubleClick={() => handleOptionDoubleClick(type.id)}
                             >
                               <span className="icon">{type.icon}</span>
                               <span className="text-white">{type.label}</span>
@@ -236,7 +283,8 @@ const ServicesModal = ({ isOpen, onClose }) => {
                               key={range.id}
                               type="button"
                               className={`option-card ${formData.budget === range.id ? 'selected' : ''}`}
-                              onClick={() => setFormData(prev => ({ ...prev, budget: range.id }))}
+                              onClick={() => handleOptionClick(range.id)}
+                              onDoubleClick={() => handleOptionDoubleClick(range.id)}
                             >
                               <span className="icon">{range.icon}</span>
                               <span className="budget-label">

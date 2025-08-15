@@ -62,7 +62,7 @@ const Project = (props) => {
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>
         <div className="project-footer">
-          <a href={link} target={target || "_self"} rel="noopener noreferrer" className="project-button">
+          <a href={link} target={target || "_blank"} rel="noopener noreferrer" className="project-button">
             <span>Visit Project</span>
             <svg className="arrow-icon" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"/>

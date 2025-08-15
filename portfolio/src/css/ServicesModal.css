@@ -210,12 +210,19 @@
   align-items: center;
   gap: 1rem;
   height: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .option-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.5);
   border-color: rgba(99, 102, 241, 0.5);
+}
+
+.option-card:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .option-card.selected {
@@ -231,6 +238,55 @@
 
 .option-card:hover .icon {
   transform: scale(1.1);
+}
+
+/* Scroll functionality visual feedback */
+.option-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-card:hover::before {
+  opacity: 1;
+}
+
+/* Double-click indicator */
+.option-card::after {
+  content: 'Click to scroll • Double-click to next';
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.option-card:hover::after {
+  opacity: 1;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .option-card::after {
+    font-size: 0.6rem;
+    bottom: 0.3rem;
+  }
+  
+  .option-card {
+    padding: 1rem;
+  }
 }
 
 /* Submit Button */

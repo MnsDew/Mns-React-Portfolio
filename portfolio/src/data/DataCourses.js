@@ -3,6 +3,7 @@ import course2 from "../assest/Course2.png";
 import course3 from "../assest/Course3.jpeg";
 // import course4 from "../assest/mockupLibro.png";
 import course4 from "../assest/1link.png";
+import course5 from "../assest/portfolio.png";
 
 const DataCourses = [
   {
@@ -38,7 +39,15 @@ const DataCourses = [
       "LibroTrack is a 100% Java library management system using MySQL, Swing, and JavaFX. It supports full CRUD for books and students, lending/returning, reports, and statistics on total books, students, and borrowed/returned items across two databases.",
     link: "https://librotrack.my.canva.site/",
     image: course4,
+  },    
+  {
+    id: 5,
+        title: "Client Portfolio Website: Ibo Global Influencer",
+        description:
+          "Built a responsive portfolio website for Ibo, a global influencer and content creator. The site showcases his personal brand, social media presence, and collaborations across platforms like TikTok, Instagram, YouTube, and Snapchat. Developed with Next.js, featuring smooth animations and multilingual support.",
+    link: "https://ibo-mu.vercel.app/",
+    image: course5,
   },
-];
+];    
 
 export default DataCourses;
