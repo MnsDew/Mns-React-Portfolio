@@ -1,201 +1,503 @@
- 
-.courses-container {
-    padding: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .courses-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    background: linear-gradient(45deg, #8324c7, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(131, 36, 199, 0.3);
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-  }
-  
-  .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  }
-  
-  .project-image-container {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 16/9;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .project-card:hover .project-image {
-    transform: scale(1.1);
-  }
-  
-  .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .project-card:hover .project-overlay {
-    opacity: 1;
-  }
-  
-  .project-link {
-    color: white;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid white;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .project-link:hover {
-    background: white;
-    color: black;
-  }
-  
-  .project-content {
-    padding: 1.5rem;
-  }
-  
-  .project-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #fff;
-    font-weight: 600;
-  }
-  
-  .project-description {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .project-footer {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .project-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background: linear-gradient(45deg, #8324c7, #6a5acd);
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+/* ============================================
+   PROJECTS SECTION — Modern 2026 Design
+   ============================================ */
+
+.courses-section {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ---------- HEADER ---------- */
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8324c7;
+  background: rgba(131, 36, 199, 0.12);
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.courses-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #8324c7 50%, #6a5acd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.courses-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0.75rem auto 0;
+  line-height: 1.6;
+}
+
+.header-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #8324c7, #6a5acd);
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- FEATURED CARD ---------- */
+
+.featured-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(131, 36, 199, 0.25);
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.4s ease;
+}
+
+.featured-card:hover {
+  border-color: rgba(131, 36, 199, 0.5);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 10;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #8324c7, #6a5acd);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(131, 36, 199, 0.4);
+}
+
+.featured-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 380px;
+}
+
+.featured-image-side {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.featured-card:hover .featured-image {
+  transform: scale(1.04);
+}
+
+.featured-image-glow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(131, 36, 199, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.featured-content-side {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featured-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.featured-description {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---------- FILTER BAR ---------- */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-btn.active {
+  background: var(--cat-color, #8324c7);
+  border-color: var(--cat-color, #8324c7);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(131, 36, 199, 0.3);
+}
+
+/* ---------- PROJECTS GRID ---------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.75rem;
+}
+
+/* ---------- PROJECT CARD ---------- */
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+  border-color: rgba(131, 36, 199, 0.3);
+}
+
+/* ---------- IMAGE CONTAINER ---------- */
+
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.06);
+}
+
+/* ---------- MULTI-CATEGORY BADGES ---------- */
+
+.project-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.card-categories-overlay {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ---------- CARD CONTENT ---------- */
+
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.75rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+/* ---------- CATEGORY TAG ---------- */
+
+.project-category-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cat-color, #8324c7);
+  background: rgba(131, 36, 199, 0.1);
+  border: 1px solid rgba(131, 36, 199, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  width: fit-content;
+  background-color: color-mix(in srgb, var(--cat-color, #8324c7) 12%, transparent);
+  border-color: color-mix(in srgb, var(--cat-color, #8324c7) 25%, transparent);
+}
+
+/* ---------- TECH TAGS ---------- */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.project-card:hover .project-tag,
+.featured-card:hover .project-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- ACTION LINKS ---------- */
+
+.project-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.project-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(135deg, rgba(131, 36, 199, 0.2), rgba(106, 90, 205, 0.2));
+  border: 1px solid rgba(131, 36, 199, 0.3);
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-action-btn:hover {
+  background: linear-gradient(135deg, #8324c7, #6a5acd);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(131, 36, 199, 0.35);
+  transform: translateY(-1px);
+}
+
+.project-action-btn span {
+  color: inherit;
+}
+
+.arrow-icon {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.project-action-btn:hover .arrow-icon {
+  transform: translateX(3px);
+}
+
+/* ---------- PROJECTS COUNT ---------- */
+
+.projects-count {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 900px) {
+  .featured-inner {
+    grid-template-columns: 1fr;
   }
 
-  .project-button span {
-    color: #ffffffc5 !important;
-    text-shadow: 0 0 8px #0a0096, 0 0 16px #8324c7;
+  .featured-image-side {
+    aspect-ratio: 16 / 9;
   }
-  
-  .project-button:hover {
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(131, 36, 199, 0.4);
+
+  .featured-content-side {
+    padding: 2rem 1.5rem;
   }
-  
-  .arrow-icon {
-    width: 20px;
-    height: 20px;
-    stroke: currentColor;
-    stroke-width: 2;
-    fill: none;
-    transition: transform 0.3s ease;
+
+  .featured-title {
+    font-size: 1.4rem;
   }
-  
-  .project-button:hover .arrow-icon {
-    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .courses-section {
+    padding: 2.5rem 1rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .courses-container {
-      padding:1rem;
-    }
-  
-    .courses-title {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-  
-    .projects-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  
-    .project-card {
-      max-width: 100%;
-    }
+
+  .courses-title {
+    font-size: 2rem;
   }
-  
-  /* Animation for cards */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .courses-subtitle {
+    font-size: 0.95rem;
   }
-  
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .project-card {
-    animation: fadeInUp 0.6s ease-out forwards;
-    animation-delay: calc(var(--card-index) * 0.1s);
+    max-width: 100%;
+  }
+
+  .featured-content-side {
+    padding: 1.5rem;
+  }
+
+  .featured-badge {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .filter-bar {
+    gap: 0.4rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .courses-title {
+    font-size: 1.65rem;
+  }
+
+  .featured-title {
+    font-size: 1.2rem;
+  }
+
+  .project-title {
+    font-size: 1.05rem;
+  }
+
+  .project-action-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
     opacity: 0;
+    transform: translateY(24px);
   }
-   
-  .project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.05)
-    );
-    z-index: -1;
-    border-radius: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}

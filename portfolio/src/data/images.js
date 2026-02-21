@@ -103,6 +103,54 @@ const IMAGES = [
     description: "PostgreSQL: Powerful, open-source relational database system.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
+  {
+    id: 18,
+    title: "Next.js",
+    description: "Next.js: React framework for production with SSR, static generation, and API routes.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    id: 19,
+    title: "TypeScript",
+    description: "TypeScript: Typed superset of JavaScript for safer and scalable code.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 20,
+    title: "Tailwind CSS",
+    description: "Tailwind CSS: Utility-first CSS framework for rapid UI development.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    id: 21,
+    title: "Docker",
+    description: "Docker: Platform for building, shipping, and running applications in containers.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    id: 22,
+    title: "Python",
+    description: "Python: High-level programming language for scripting, automation, and backend.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
+  {
+    id: 23,
+    title: "Supabase",
+    description: "Supabase: Open-source Firebase alternative with Postgres, auth, and realtime.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+  },
+  {
+    id: 24,
+    title: ".NET",
+    description: ".NET: Cross-platform framework for building web, mobile, and desktop apps.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+  },
+  {
+    id: 25,
+    title: "Kotlin",
+    description: "Kotlin: Modern language for Android and multiplatform development.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+  },
 ];
 
 export default IMAGES;
