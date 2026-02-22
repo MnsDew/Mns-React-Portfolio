@@ -8,10 +8,20 @@ import chartsImg from "../assest/newProjects/charts.png";
 import firstyyImg from "../assest/newProjects/firstyy.png";
 import iboshImg from "../assest/newProjects/LUXURY BAGS STORE.png";
 import tradesPilotImg from "../assest/newProjects/TradesPilotAI.png";
+import integrationImg from "../assest/newProjects/testing-all-sessions.png";
+import topDownStubsImg from "../assest/newProjects/Top-Down-With-Stubs.jpeg";
+import decompositionTreeImg from "../assest/newProjects/decompostion tree.jpeg";
 import cfgImg from "../assest/newProjects/1.png";
 import mcdcImg from "../assest/newProjects/2.png";
-import integrationImg from "../assest/newProjects/testing-all-sessions.png";
 import contextDiagramImg from "../assest/systemDesign/C4 MODEL LEVEL1 CONTEXT Diagram_.jpg";
+import containerImg from "../assest/systemDesign/container.png";
+import componentDiagramImg from "../assest/systemDesign/Component Diagram V7.png";
+import umlClassImg from "../assest/systemDesign/UML CLASS Diagram.png";
+import sequenceDiagramImg from "../assest/systemDesign/Altava E- Commerce System , Sequence Diagram.png";
+import erDiagramImg from "../assest/systemDesign/ER Diagram.png";
+import deploymentDiagramImg from "../assest/systemDesign/Deployment Diagaram MNS V.jpg";
+import useCaseImg from "../assest/systemDesign/use case v5.png";
+import activityDiagramImg from "../assest/systemDesign/Activity Diagrams.jpeg";
 
 const DataCourses = [
   {
@@ -22,7 +32,7 @@ const DataCourses = [
     link: "https://velura-hotel.vercel.app/en",
     image: adminImg,
     target: "_blank",
-    categories: ["Full-Stack", "Client Work"],
+    categories: ["Full-Stack"],
     featured: true,
     tags: ["React", "Node.js", "SQL", "REST API", "Email Service", "Analytics", "i18n"],
     links: [
@@ -71,39 +81,18 @@ const DataCourses = [
   },
   {
     id: 10,
-    title: "SWE431 — Integration Testing Sessions",
+    title: "Software Testing & Validation",
     description:
-      "Top-down progressive integration with stubs across 4 sessions (S1–S4). Validates component interactions from Repository to Controller level, covering search, billing, and full system end-to-end testing with expected vs actual results.",
-    link: "#",
-    image: integrationImg,
+      "SWE431 academic project: top-down integration strategy with stubs and integration test sessions (S1–S4). Covers Repository → Controller flow, expected vs actual results, and full system testing. See full project on LinkedIn.",
+    link: "https://www.linkedin.com/in/mg-mns-coding/details/projects/",
+    image: topDownStubsImg,
+    images: [topDownStubsImg, integrationImg, decompositionTreeImg, cfgImg, mcdcImg],
     target: "_blank",
     categories: ["Academic"],
-    tags: ["Integration Testing", "Top-Down", "Stubs", "Node.js", "MVC"],
-    links: [],
-  },
-  {
-    id: 9,
-    title: "SWE431 — Control Flow Graph & Cyclomatic Complexity",
-    description:
-      "CFG visualization and cyclomatic complexity analysis of the buyBook function. 12 nodes, 14 edges, V(G) = 4 with 4 independent paths covering all business logic branches from book lookup to purchase completion.",
-    link: "#",
-    image: cfgImg,
-    target: "_blank",
-    categories: ["Academic"],
-    tags: ["CFG", "Cyclomatic Complexity", "White-Box", "Path Analysis", "Node.js"],
-    links: [],
-  },
-  {
-    id: 8,
-    title: "SWE431 — MC/DC Test Coverage",
-    description:
-      "Modified Condition/Decision Coverage analysis with structured test cases. Covers all decision conditions (book existence, stock quantity, balance check) with basis path testing to achieve full coverage across 4 test cases.",
-    link: "#",
-    image: mcdcImg,
-    target: "_blank",
-    categories: ["Academic"],
-    tags: ["MC/DC", "Decision Coverage", "Test Cases", "White-Box", "Software Testing"],
-    links: [],
+    tags: ["Integration Testing", "Top-Down", "Stubs", "Node.js", "SWE431"],
+    links: [
+      { label: "View on LinkedIn", url: "https://www.linkedin.com/in/mg-mns-coding/details/projects/" },
+    ],
   },
   {
     id: 7,
@@ -125,9 +114,20 @@ const DataCourses = [
     id: 6,
     title: "Altava — E-Commerce System Architecture (C4 Model)",
     description:
-      "Scalable e-commerce architecture documentation using C4 Model, clean architecture, and SOLID principles. 9 professional diagrams: Context, Container, Component, UML, ERD, Sequence, Deployment, Use Case, and System Overview.",
+      "Scalable e-commerce architecture documentation using C4 Model, clean architecture, and SOLID principles. 9 professional diagrams: Context, Container, Component, UML Class, Sequence, ERD, Deployment, Use Case, and Activity.",
     link: "https://librotrack.my.canva.site/altava-e-commerce-system-architecture",
     image: contextDiagramImg,
+    images: [
+      contextDiagramImg,
+      containerImg,
+      componentDiagramImg,
+      umlClassImg,
+      sequenceDiagramImg,
+      erDiagramImg,
+      deploymentDiagramImg,
+      useCaseImg,
+      activityDiagramImg,
+    ],
     target: "_blank",
     categories: ["System Design"],
     tags: ["C4 Model", "Architecture", "SOLID", "PostgreSQL", "MongoDB"],

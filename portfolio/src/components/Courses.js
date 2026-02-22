@@ -76,7 +76,21 @@ const FeaturedProject = ({ project }) => {
 };
 
 const ProjectCard = ({ project, index }) => {
-  const { title, description, link, image, target, categories, tags, links } = project;
+  const { title, description, link, image, images, target, categories, tags, links } = project;
+  const hasMultipleImages = images && images.length > 1;
+  const [imgIndex, setImgIndex] = useState(0);
+  const displayImage = hasMultipleImages ? images[imgIndex] : image;
+
+  const goPrev = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setImgIndex((i) => (i === 0 ? images.length - 1 : i - 1));
+  };
+  const goNext = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setImgIndex((i) => (i === images.length - 1 ? 0 : i + 1));
+  };
 
   return (
     <motion.div
@@ -87,15 +101,26 @@ const ProjectCard = ({ project, index }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
     >
-      <div className="project-image-container">
-        <img src={image} alt={title} className="project-image" />
+      <div className={`project-image-container ${hasMultipleImages ? "project-image-container--zoom-out" : ""}`}>
+        <img
+          src={displayImage}
+          alt={title}
+          className="project-image"
+          key={imgIndex}
+        />
+        {hasMultipleImages && (
+          <div className="project-image-nav" onClick={(e) => e.stopPropagation()}>
+            <button type="button" className="project-image-nav-btn prev" onClick={goPrev} aria-label="Previous image">
+              <ChevronIcon dir="left" />
+            </button>
+            <button type="button" className="project-image-nav-btn next" onClick={goNext} aria-label="Next image">
+              <ChevronIcon dir="right" />
+            </button>
+            <span className="project-image-counter">{imgIndex + 1} / {images.length}</span>
+          </div>
+        )}
         <div className="card-categories-overlay">
           <CategoryTags categories={categories} />
-        </div>
-        <div className="project-overlay">
-          <a href={link} target={target || "_blank"} rel="noopener noreferrer" className="project-link">
-            View Project
-          </a>
         </div>
       </div>
       <div className="project-content">
@@ -129,6 +154,12 @@ const ProjectCard = ({ project, index }) => {
 const ArrowIcon = () => (
   <svg className="arrow-icon" viewBox="0 0 24 24">
     <path d="M5 12h14M12 5l7 7-7 7" />
+  </svg>
+);
+
+const ChevronIcon = ({ dir }) => (
+  <svg className="chevron-icon" viewBox="0 0 24 24" style={dir === "left" ? { transform: "rotate(180deg)" } : {}}>
+    <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" fill="none" />
   </svg>
 );
 
