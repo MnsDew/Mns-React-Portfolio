@@ -72,7 +72,7 @@ const DataCourses = [
     title: "Forex Trading Portfolio Platform",
     description:
       "Personal portfolio for forex trading with light/dark theming, full brand identity, EN & AR support with O(1) language/color switching. Integrated with TradingView real-time market prices and charts. Fintech-grade UI.",
-    link: "#",
+    link: "https://aboudyfx.vercel.app/en",
     image: chartsImg,
     target: "_blank",
     categories: ["Fintech", "Full-Stack", "Client Work"],
