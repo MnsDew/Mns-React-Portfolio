@@ -61,6 +61,17 @@
 
   </head>
   <body>
+    <script>
+      const host = window.location.hostname;
+      if (host === "mns-portfolio.onrender.com") {
+        const newUrl =
+          "https://mns70.com" +
+          window.location.pathname +
+          window.location.search +
+          window.location.hash;
+        window.location.replace(newUrl);
+      }
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
