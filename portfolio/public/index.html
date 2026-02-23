@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      /* Prevent flash: black until app CSS loads, then app body (stars) overrides */
+      html, body { background: #000; min-height: 100%; margin: 0; }
+      #root { min-height: 100vh; background: transparent; }
+    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFG0P8K1CX"></script>
     <script>

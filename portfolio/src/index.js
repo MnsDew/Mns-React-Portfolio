@@ -17,18 +17,21 @@ function Root() {
 
   return (
     <>
-      {loading && <Loader onComplete={handleLoaderDone} />}
-      <div style={loading ? { opacity: 0 } : { opacity: 1, transition: "opacity 0.5s ease" }}>
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route exact path="/" element={<App />} />
-            <Route path="/amthal" element={<Amthal />} />
-            <Route path="/Technologies" element={<Technologies />} />
-            <Route path="/ServicesModal" element={<ServicesModal />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+      {loading ? (
+        <Loader onComplete={handleLoaderDone} />
+      ) : (
+        <div style={{ opacity: 1, transition: "opacity 0.5s ease" }}>
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route exact path="/" element={<App />} />
+              <Route path="/amthal" element={<Amthal />} />
+              <Route path="/Technologies" element={<Technologies />} />
+              <Route path="/ServicesModal" element={<ServicesModal />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      )}
     </>
   );
 }
