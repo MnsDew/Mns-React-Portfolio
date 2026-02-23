@@ -1,23 +1,43 @@
 {
   "files": {
-    "main.css": "./static/css/main.f3015ff9.css",
-    "main.js": "./static/js/main.388c2368.js",
+    "main.css": "./static/css/main.33b16c1f.css",
+    "main.js": "./static/js/main.7882b233.js",
+    "static/media/LUXURY BAGS STORE.png": "./static/media/LUXURY BAGS STORE.f2c17a8ea3afc378132a.png",
     "static/media/1link.png": "./static/media/1link.01fc67d49edaaa29c3d4.png",
+    "static/media/ER Diagram.png": "./static/media/ER Diagram.778e9c616dc99994c85c.png",
+    "static/media/firstyy.png": "./static/media/firstyy.62c7a310da051dd2ddad.png",
+    "static/media/UML CLASS Diagram.png": "./static/media/UML CLASS Diagram.180f1b63bd36d9781a2f.png",
+    "static/media/portfolio.png": "./static/media/portfolio.ba9020dfdc1c6b39b77c.png",
+    "static/media/C4 MODEL LEVEL1 CONTEXT Diagram_.jpg": "./static/media/C4 MODEL LEVEL1 CONTEXT Diagram_.8695535d68c11d2517a9.jpg",
+    "static/media/admin.png": "./static/media/admin.0fefdacc21e9a3292574.png",
+    "static/media/Altava E- Commerce System , Sequence Diagram.png": "./static/media/Altava E- Commerce System , Sequence Diagram.8592f3eec7c2f6055bba.png",
+    "static/media/Component Diagram V7.png": "./static/media/Component Diagram V7.8588570579dd7c313985.png",
+    "static/media/testing-all-sessions.png": "./static/media/testing-all-sessions.dc4c912fd9b7e8a99c25.png",
+    "static/media/TradesPilotAI.png": "./static/media/TradesPilotAI.a4a310e2703d3c6d98c8.png",
+    "static/media/charts.png": "./static/media/charts.62df981996d07435e7f8.png",
+    "static/media/2.png": "./static/media/2.2c352a863da190b63877.png",
+    "static/media/container.png": "./static/media/container.139d7bc45f430e79bffa.png",
     "static/media/prof.jpg": "./static/media/prof.36de855e2c521fd07502.jpg",
+    "static/media/1.png": "./static/media/1.50bd0c69fd0def5b4220.png",
+    "static/media/Deployment Diagaram MNS V.jpg": "./static/media/Deployment Diagaram MNS V.fce74ae74a1d932405ea.jpg",
     "static/media/course1.png": "./static/media/course1.c5765a26f670a566f8df.png",
+    "static/media/use case v5.png": "./static/media/use case v5.24d5a46e65f6e44042b7.png",
+    "static/media/Top-Down-With-Stubs.jpeg": "./static/media/Top-Down-With-Stubs.1dd4f00d09958657e7ad.jpeg",
     "static/media/2nd.png": "./static/media/2nd.fbf61b7094cdf2d1ee0a.png",
     "static/media/Course3.jpeg": "./static/media/Course3.b149dec65d1a8307a023.jpeg",
+    "static/media/decompostion tree.jpeg": "./static/media/decompostion tree.0897a9addd88357f5f61.jpeg",
+    "static/media/Activity Diagrams.jpeg": "./static/media/Activity Diagrams.94518efae7250f49ca29.jpeg",
     "static/media/github.png": "./static/media/github.553c66159c5672f25df6.png",
     "static/media/linkedin.png": "./static/media/linkedin.d21b834035baa551e886.png",
     "static/media/email (1).png": "./static/media/email (1).784a21db7cc25e36f99c.png",
     "static/media/Course2.png": "./static/media/Course2.082727062587e5c987c5.png",
     "index.html": "./index.html",
     "static/media/github1.svg": "./static/media/github1.74d13353bde36d2dde5b52360f829273.svg",
-    "main.f3015ff9.css.map": "./static/css/main.f3015ff9.css.map",
-    "main.388c2368.js.map": "./static/js/main.388c2368.js.map"
+    "main.33b16c1f.css.map": "./static/css/main.33b16c1f.css.map",
+    "main.7882b233.js.map": "./static/js/main.7882b233.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3015ff9.css",
-    "static/js/main.388c2368.js"
+    "static/css/main.33b16c1f.css",
+    "static/js/main.7882b233.js"
   ]
 }

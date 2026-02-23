@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mns-portfolio
+    env: static
+    routes:
+      - type: redirect
+        source: https://mns-portfolio.onrender.com/*
+        destination: https://mns70.com/:splat
+        status: 301
